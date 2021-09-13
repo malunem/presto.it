@@ -18,8 +18,7 @@
         {{-- segnaposto generico --}}
         {{$slot}}
 
-        {{-- <x-footer/> --}}
-        {{-- <x-footer/> --}}
+        <x-footer/>
         <script src="{{asset('js/app.js')}}"></script>
     </body>
 </html>
