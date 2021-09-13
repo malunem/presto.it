@@ -1,6 +1,6 @@
 <footer class="  footer">
     
-    <div class="container-fluid pt-5 bg-danger">
+    <div class="container-fluid pt-5 bg-success">
         <div class="row align-items-center d-flex justifiy-content-center">
             <div class="col-12 col-md-4 me-5 ">
                 <h3 class="my-2 "><img class="bg-primary" alt="">I :heart: Movies<i class="fab fa-google-play mx-3"></i>

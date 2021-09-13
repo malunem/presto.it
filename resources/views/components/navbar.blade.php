@@ -22,7 +22,7 @@
           @endguest
           @auth
           <li class="nav-item">
-            <a class="nav-link " href="#" >Benvenuto, {{Auth::user()->name}}</a>
+            <a class="nav-link " href="#">Benvenuto, {{Auth::user()->name}}</a>
           </li>
            <li class="nav-item"><a class="nav-link "  href="{{route('logout')}}" onclick="event.preventDefault();
             document.getElementById('form-logout').submit();">Logout</a></li>
