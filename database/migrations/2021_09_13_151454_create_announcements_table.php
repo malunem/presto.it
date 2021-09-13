@@ -15,6 +15,13 @@ class CreateAnnouncementsTable extends Migration
     {
         Schema::create('announcements', function (Blueprint $table) {
             $table->id();
+            $table->unsignedBigInteger('category_id');
+            $table->foreign('category_id')->references('id')->on('categories');
+            $table->string('title');
+            $table->text('description');
+            $table->string('price');
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')->references('id')->on('users');
             $table->timestamps();
         });
     }
@@ -25,7 +32,7 @@ class CreateAnnouncementsTable extends Migration
      * @return void
      */
     public function down()
-    {
+    {   
         Schema::dropIfExists('announcements');
     }
 }
