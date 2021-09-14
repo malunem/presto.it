@@ -1,9 +1,9 @@
-<footer class="  footer">
+<footer class="footer">
     
-    <div class="container-fluid pt-5 bg-success">
+    <div class="container-fluid pt-5 text-white">
         <div class="row align-items-center d-flex justifiy-content-center">
             <div class="col-12 col-md-4 me-5 ">
-                <h3 class="my-2 "><img class="bg-primary" alt="">I :heart: Movies<i class="fab fa-google-play mx-3"></i>
+                <h3 class="my-2 "><img class="bg-primary" alt="">Presto.it<i class="fab fa-google-play mx-3"></i>
                     <i class="fab fa-apple fa-1x"></i></h2> 
                     <p class="mt-5 mb-5">Con curiosità e impegno inesauribili, ci dedichiamo da anni all'esplorazione del mondo del cinema e delle serie TV: spazio all'informazione, alle recensioni, all'approfondimento e all'analisi, ma anche e soprattutto al divertimento e alla passione.</p>
                     
@@ -29,12 +29,7 @@
                 
                 
                 
-                    <div class="col-12 col-md-6 d-flex justify-content-evenly social">
-                        <i class="fab fa-facebook-square fa-2x "></i>
-                        <i class="fab fa-instagram fa-2x "></i>
-                        <i class="fab fa-linkedin fa-2x "></i>
-                        <i class="fab fa-twitter fa-2x "></i>
-                    </div>
+
                 </div>
                 
                 

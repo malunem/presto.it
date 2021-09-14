@@ -1,0 +1,42 @@
+
+
+:root{
+    --backgroundColor: #B2384F;
+    --blueColor: #E6E2D4;
+    --accentColor: #C3DBF5 ;
+    --textColor:#8590AA;
+    --borderColor: #FFFFFF;
+    --grayColor: #303030;
+    --orangeColor: #ff8c00;
+    --navColor:#303C6C; 
+}
+.navbarcustom{
+    background-color: var(--navColor);
+}
+
+.footer{
+    background-color: var(--navColor);
+}
+.navbar-brand{
+    color: var(--orangeColor);
+}
+
+*  {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    font-size: bold;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.logo{
+    width: 45px;
+    color: var(--orangeColor);
+}
