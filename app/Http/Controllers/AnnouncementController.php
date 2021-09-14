@@ -32,5 +32,11 @@ class AnnouncementController extends Controller
    
         return redirect(route('homepage'))->with('message', "Ciao " .Auth::user()->name. " Il tuo annuncio è stato inserito");
     }
+
+    public function showDetailAnnouncement(Announcement $announcement){
+        
+        return view('announcement.detailAnnouncement', compact('announcement'));
+
+    }
 }
 
