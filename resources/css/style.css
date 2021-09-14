@@ -1,8 +1,8 @@
 
 
 :root{
-    --backgroundColor: #B2384F;
-    --blueColor: #E6E2D4;
+    --backgroundColor: #fbe8a6;
+    --vanillaColor: #f2f2f2; 
     --accentColor: #C3DBF5 ;
     --textColor:#8590AA;
     --borderColor: #FFFFFF;
@@ -21,7 +21,7 @@
     color: var(--orangeColor);
 }
 
-*  {
+*{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -40,3 +40,73 @@ h1, h2, h3, .h1, .h2, .h3 {
     width: 45px;
     color: var(--orangeColor);
 }
+ 
+body{
+    background-color: var(--backgroundColor);
+} 
+
+.wrapper{
+    position: relative;
+    margin-bottom: 17%;
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+a {
+    color: var(--orangeColor);
+}
+
+/* .btn-custom{
+    border-color: 2px solid var(--navColor);
+    border-radius: 10px;
+} */
+      /* classi per i bottoni  */
+/* .btn-custom {
+    color: #fff;
+    background-color: var(--navColor);
+    border-color: var(--navColor);
+  }
+.btn-custom:hover {
+    color: var(--navColor);
+    background-color: white;
+    border-color: var(--orangeColor);
+    cursor: pointer;
+  } */
+.btn-custom{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: white;
+    background-color: var(--navColor);
+    text-transform: capitalize  ;
+    border-radius: 0.25rem;
+}
+
+.btn-custom:hover{
+    color: var(--orangeColor);
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+} 
+
+@keyframes zoom{
+    /* 0% {transform: scale(1);} */
+   /* 25% {transform: scale(1.2);} */
+    /* 50% {transform: scale(1);} */
+    75% {transform: scale(1.2);}
+    /* 100% {transform: scale(1);} */
+}
+.carousel{
+    min-height: 40vh;
+}
+.img-carousel{
+    background: url('/public/img/foto1.jpeg')!important;
+    z-index: 3;
+}
+
