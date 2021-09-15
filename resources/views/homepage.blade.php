@@ -5,6 +5,13 @@
         {{ session('message') }}
     </div>
     @endif
+
+    @if (session('access.denied.revisor.only'))
+        <div class="alert alert-danger">
+            Accesso consentito solo ai revisori
+        </div>
+    @endif
+
     <header>
       <img class="w-100 d-block header" src="https://www.apexweb.co.uk/docs/headers/e-commerce-websites.jpg" alt="">
     </header>

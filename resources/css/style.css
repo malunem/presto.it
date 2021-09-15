@@ -1,5 +1,3 @@
-
-
 :root{
     --backgroundColor: #fbe8a6;
     --vanillaColor: #f2f2f2; 
@@ -10,22 +8,33 @@
     --orangeColor: #ff8c00;
     --navColor:#303C6C; 
 }
-.navbarcustom{
-    background-color: var(--navColor);
-}
-
-.footer{
-    background-color: var(--navColor);
-}
-.navbar-brand{
-    color: var(--orangeColor);
-}
 
 *{
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
+
+
+body{
+    background-color: var(--backgroundColor);
+    min-height: 100vh;
+    position: relative;
+
+} 
+.navbarcustom{
+    background-color: var(--navColor);
+}
+
+.footer{
+    background-color: var(--navColor);
+    position: absolute;
+    bottom: 0px;
+}
+.navbar-brand{
+    color: var(--orangeColor);
+}
+
 html body{
     margin: 0;
     padding: 0;
@@ -40,10 +49,6 @@ h1, h2, h3, .h1, .h2, .h3 {
     width: 45px;
     color: var(--orangeColor);
 }
- 
-body{
-    background-color: var(--backgroundColor);
-} 
 
 .wrapper{
     position: relative;

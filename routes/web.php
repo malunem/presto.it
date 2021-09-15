@@ -22,4 +22,11 @@ Route::get('/announcement',[AnnouncementController::class,'newAnnouncement'])->n
 Route::post('/createAnnouncement',[AnnouncementController::class,'createAnnouncement'])->name('create.Announcement');
 Route::get('/category/{category_id}', [HomeController::class, 'showCategory'])->name('show.Category');
 Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'showDetailAnnouncement'])->name('show.DetailAnnouncement');
-Route::get('/revisor/homepage',[RevisorController::class,'index'])->name('homepage');
+
+
+// revisor area
+Route::get('/revisor/homepage',[RevisorController::class,'index'])->name('revisor.homepage');
+
+Route::post('/revisor/announcement/{id}/accept', [RevisorController::class, 'accept'])->name('revisor.accept');
+
+Route::post('/revisor/announcement/{id}/reject', [RevisorController::class, 'reject'])->name('revisor.reject');

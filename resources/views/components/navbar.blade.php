@@ -13,6 +13,7 @@
           <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{route('newAnnouncement')}}">Inserisci un annuncio</a>
           </li>
+
           @guest
           <li class="nav-item">
             <a class="nav-link" href="{{route('login')}}">Login</a>
@@ -22,6 +23,18 @@
           </li>
           @endguest
           @auth
+          {{--Revisor home --}}
+
+          @if (Auth::user()->is_revisor)
+              <li class="nav-item">
+                <a class="nav-link" href="{{route('revisor.homepage')}}">Revisor home
+                    <span class="badge badge-pill badge-warning">
+                        {{App\Models\Announcement::ToBeRevisionedCount()}}
+                    </span>
+                </a>
+              </li>
+          @endif
+
           <li class="nav-item">
             <a class="nav-link " href="#">Benvenuto, {{Auth::user()->name}}</a>
           </li>
