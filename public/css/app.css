@@ -15996,9 +15996,11 @@ a {
     min-height: 40vh;
 }
 .img-carousel{
-    background: url('/public/img/foto1.jpeg')!important;
+    background-image: url(https://picsum.photos/200/300
+    );
     z-index: 3;
 }
-
-
+.header{
+    max-height: 50vh;
+}
 
