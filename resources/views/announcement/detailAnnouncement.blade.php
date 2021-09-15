@@ -29,7 +29,7 @@
                   <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>
                 </p>
                 
-                <div class="mini-imgs my-5">
+                <div class="mini-imgs my-5 img-fluid">
                     <img src="https://picsum.photos/100/125" alt="">
                     <img src="https://picsum.photos/101/125" alt="">
                     <img src="https://picsum.photos/102/125" alt="">

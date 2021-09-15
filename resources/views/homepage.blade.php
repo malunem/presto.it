@@ -54,7 +54,7 @@
                 @foreach ($announcements as $announcement)
                 <div class="col-12 col-md-4">
                     <div class="card my-3" style="width: 18rem;">
-                        <img src="https://picsum.photos/300" class="card-img-top" alt="{{$announcement->title}}">
+                        <img class="img-fluid" src="https://picsum.photos/300" class="card-img-top" alt="{{$announcement->title}}">
                         <div class="card-body">
                           <h5 class="card-title">{{$announcement->title}}</h5>
                           <p class="card-text">{{Str::limit($announcement->description, 50)}}</p>
