@@ -61,7 +61,7 @@
                           <p class="card-text">{{$announcement->user->name}}</p>
                           <p class="card-text">{{$announcement->created_at->format('d/m/Y')}}</p>
                           <p class="card-text"> <a href="{{route('show.Category', $announcement->category_id)}}" class="text-decoration-none ">{{$announcement->category->category}}</a></p>
-                          <a href="{{route('show.DetailAnnouncement', $announcement)}}" class="btn btn-custom">Go somewhere</a>
+                          <a href="{{route('show.DetailAnnouncement', $announcement)}}" class="btn btn-custom">Scopri di più</a>
                         </div>
                       </div>
                 </div>  
