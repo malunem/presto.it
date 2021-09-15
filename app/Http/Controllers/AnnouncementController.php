@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Announcement;
 use App\Models\Category;
+use App\Models\Announcement;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use App\Http\Requests\AnnouncementRequest;
 
 class AnnouncementController extends Controller
 {
     public function __construct()
     {
-       $this->middleware('auth');
+    //    $this->middleware('auth')->except(['newAnnouncement']);
+       $this->middleware('auth')->except(['showDetailAnnouncement']);
+    
     }
     public function newAnnouncement(){
         $categories=Category::all();
@@ -19,7 +22,7 @@ class AnnouncementController extends Controller
         return view('announcement.newAnnouncement',compact('categories'));
     }
     
-    public function createAnnouncement(Request $request){
+    public function createAnnouncement(AnnouncementRequest $request){
         $announcement=Announcement::create([
             'title'=>$request->title,
             'description'=>$request->description,
