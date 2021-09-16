@@ -6,7 +6,8 @@
     --borderColor: #FFFFFF;
     --grayColor: #303030;
     --orangeColor: #ff8c00;
-    --navColor:#303C6C; 
+    --navColor: #3A3A3A; 
+    
 }
 
 *{
@@ -46,7 +47,8 @@ h1, h2, h3, .h1, .h2, .h3 {
 }
 
 .logo{
-    width: 45px;
+    height: 45px;
+    
     color: var(--orangeColor);
 }
 

@@ -15876,8 +15876,6 @@ readers do not read off random characters that represent icons */
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
-
-
 :root{
     --backgroundColor: #fbe8a6;
     --vanillaColor: #f2f2f2; 
@@ -15886,17 +15884,8 @@ readers do not read off random characters that represent icons */
     --borderColor: #FFFFFF;
     --grayColor: #303030;
     --orangeColor: #ff8c00;
-    --navColor:#303C6C; 
-}
-.navbarcustom{
-    background-color: var(--navColor);
-}
-
-.footer{
-    background-color: var(--navColor);
-}
-.navbar-brand{
-    color: var(--orangeColor);
+    --navColor: #3A3A3A; 
+    
 }
 
 *{
@@ -15904,6 +15893,27 @@ readers do not read off random characters that represent icons */
     margin: 0;
     padding: 0;
 }
+
+
+body{
+    background-color: var(--backgroundColor);
+    min-height: 100vh;
+    position: relative;
+
+} 
+.navbarcustom{
+    background-color: var(--navColor);
+}
+
+.footer{
+    background-color: var(--navColor);
+    position: absolute;
+    bottom: 0px;
+}
+.navbar-brand{
+    color: var(--orangeColor);
+}
+
 html body{
     margin: 0;
     padding: 0;
@@ -15915,13 +15925,10 @@ h1, h2, h3, .h1, .h2, .h3 {
 }
 
 .logo{
-    width: 45px;
+    height: 45px;
+    
     color: var(--orangeColor);
 }
- 
-body{
-    background-color: var(--backgroundColor);
-} 
 
 .wrapper{
     position: relative;
