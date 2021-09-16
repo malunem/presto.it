@@ -15884,8 +15884,7 @@ readers do not read off random characters that represent icons */
     --borderColor: #FFFFFF;
     --grayColor: #303030;
     --orangeColor: #ff8c00;
-    --navColor: #323B59; 
-    
+    --navColor: #323B59;     
 }
 
 * {
@@ -15894,11 +15893,9 @@ readers do not read off random characters that represent icons */
     padding: 0;
 }
 
-
 body{
     min-height: 100vh;
     position: relative;
-
 } 
 .navbarcustom{
     background-color: var(--navColor);
@@ -15925,7 +15922,6 @@ h1, h2, h3, .h1, .h2, .h3 {
 
 .logo{
     height: 45px;
-    
     color: var(--orangeColor);
 }
 
@@ -16013,7 +16009,7 @@ a {
     min-height: 40vh;
 }
 .img-carousel-1{
-    background: linear-gradient( rgba(0,10,0,0.5), transparent), url("/img/foto1.png"); 
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto1.png"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16021,7 +16017,7 @@ a {
     z-index: 3;
 } 
 .img-carousel-2{
-    background: linear-gradient( rgba(0,10,0,0.5), transparent), url("/img/foto2.png"); 
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4)), url("/img/foto2.png"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -16029,14 +16025,13 @@ a {
     z-index: 3;
 } 
 .img-carousel-3{
-    background: linear-gradient( rgba(0,10,0,0.5), transparent), url("/img/foto3.png"); 
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto3.png"); 
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     min-height: 60vh;
     z-index: 3;
 } 
-
 
 .customPcarosello{
     font-size  : 5rem;
@@ -16046,10 +16041,11 @@ a {
     max-height: 50vh;
 }
 
-.text-custom{
-    color: var(--navColor);
+.text-custom h2, h3{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white; */
-
 }
 

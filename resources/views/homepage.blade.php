@@ -18,40 +18,30 @@
           <header>
             <div id="myCarousel" class="carousel slide carousel-fade custom-carousel" data-bs-ride="carousel">
               <div class="carousel-inner">
-                <div class="carousel-item active carousel-item-start">
-                  <div class="img-carousel-1">
-                  </div>
-          
-                  <div class="container">
+
+                <div class="carousel-item active carousel-item-start img-carousel-1">
                     <div class="carousel-caption text-start text-custom">
                       <h2>I tuoi acquisti a portata di click</h2> 
-                      <h3>Veloce, reattivo e affidabile .</h3>
+                      <h3>Veloce, reattivo e affidabile.</h3>
                     </div>
-                  </div>
                 </div>
+
                 <div class="carousel-item carousel-item-next carousel-item-start img-carousel-2">
-                  <div class="">
-                  </div>
-          
-                  <div class="container">
                     <div class="carousel-caption text-start text-custom">
                       <h2>I tuoi acquisti a portata di click</h2> 
-                      <h3>Veloce, reattivo e affidabile .</h3>
+                      <h3>Veloce, reattivo e affidabile.</h3>
                     </div>
-                  </div>
                 </div>
-                <div class="carousel-item">
-                  <div class="img-carousel-3">
-                  </div>
-          
-                  <div class="container">
+
+                <div class="carousel-item carousel-item-next carousel-item-start img-carousel-3">
                     <div class="carousel-caption text-start text-custom">
                       <h2>I tuoi acquisti a portata di click</h2> 
-                      <h3>Veloce, reattivo e affidabile .</h3>
+                      <h3>Veloce, reattivo e affidabile.</h3>
                     </div>
-                  </div>
                 </div>
+
               </div>
+
             </div>
           </header>
         </div>
