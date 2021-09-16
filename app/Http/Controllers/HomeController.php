@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Http\Requests\AnnouncementRequest;
 use App\Models\Category;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
@@ -13,6 +14,13 @@ class HomeController extends Controller
         $announcements=Announcement::where('is_accepted', true)->orderBy('created_at', 'desc')->take(5)->get();
         return view('homepage', compact('announcements'));
         
+    }
+
+    public function search(Request $request){
+        
+        $query = $request->input('query');
+        $announcements = Announcement::search($query)->where('is_accepted',true)->get();
+        return view('searchResults', compact('query','announcements'));
     }
     
     public function showCategory($category_id) {
