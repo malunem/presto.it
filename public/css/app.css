@@ -15884,7 +15884,7 @@ readers do not read off random characters that represent icons */
     --borderColor: #FFFFFF;
     --grayColor: #303030;
     --orangeColor: #ff8c00;
-    --navColor: #3A3A3A; 
+    --navColor: #323B59; 
     
 }
 
@@ -15907,7 +15907,7 @@ body{
 
 .footer{
     background-color: var(--navColor);
-    position: absolute;
+    position: static;
     bottom: 0px;
 }
 .navbar-brand{
@@ -15928,6 +15928,10 @@ h1, h2, h3, .h1, .h2, .h3 {
     height: 45px;
     
     color: var(--orangeColor);
+}
+
+.footerlogo{
+    height: 65px;
 }
 
 .wrapper{
@@ -16002,12 +16006,28 @@ a {
 .carousel{
     min-height: 40vh;
 }
-.img-carousel{
-    background-image: url(https://picsum.photos/200/300
-    );
-    z-index: 3;
-}
+
+.custom-carousel{
+    /* min-height: 50px!important; */
+    z-index: -10;
+   
+  
+    }
+     .img-carousel{
+        width: 100vw;
+        max-height:863px;
+        min-height: 350px; 
+        ;
+    } 
+
+    .customPcarosello{
+        
+        font-size  : 5rem;
+    }
+
+
 .header{
     max-height: 50vh;
 }
+
 

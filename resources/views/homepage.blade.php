@@ -12,48 +12,59 @@
         </div>
     @endif
 
-    <header>
-      <img class="w-100 d-block header" src="https://www.apexweb.co.uk/docs/headers/e-commerce-websites.jpg" alt="">
-    </header>
-    {{-- <div class="carousel ">
-        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 p-0">
+          <header>
+            <div id="myCarousel" class="carousel slide carousel-fade custom-carousel" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active carousel-item-start">
+                  <div class="img-test">
+                    <h2></h2>
+                    <img class="display-block img-carousel img-fluid" src="/img/foto3.png">
+                  </div>
+          
+                  <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h2>I tuoi acquisti a portata di click</h2> 
+                      <h3>Veloce, reattivo e affidabile .</h3>
+                      <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item carousel-item-next carousel-item-start">
+                  <div class="img-test">
+                    <img class="display-block img-carousel img-fluid" src="/img/foto1.png">
+                  </div>
+          
+                  <div class="container">
+                    <div class="carousel-caption">
+                      <h1>Another example headline.</h1>
+                      <p>Some representative placeholder content for the second slide of the carousel.</p>
+                      <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    </div>
+                  </div>
+                </div>
+                <div class="carousel-item">
+                  <div class="img-test">
+                    <img class="display-block img-carousel img-fluid" src="/img/foto2.png">
+                  </div>
+          
+                  <div class="container">
+                    <div class="carousel-caption text-end">
+                      <h1>One more for good measure.</h1>
+                      <p>Some representative placeholder content for the third slide of this carousel.</p>
+                      <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    </div>
+                  </div>
+                </div>
+              </div>
             </div>
-            <div class="carousel-inner">
-              <div class="carousel-item  active">
-                <div class="carousel-caption text-red img-carousel">
-                  <h2>I tuoi acquisti a portata di click</h2>
-                  <h3>Veloce, reattivo e affidabile .</h3>
-                  
-                </div>
-              </div>
-              <div class="carousel-item sfondo2">
-                <div class="carousel-caption text-red">
-                  <h2>I tuoi acquisti a portata di click</h2>
-                  <h3>Veloce, reattivo e affidabile .</h3>
-                </div>
-              </div>
-              <div class="carousel-item sfondo3">
-                <div class="carousel-caption text-red">
-                  <h2>I tuoi acquisti a portata di click</h2>
-                  <h3>Veloce, reattivo e affidabile .</h3>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-
-    </div> --}}
+          </header>
+        </div>
+      </div>
+    </div>
+    
     <div class="wrapper">
         <div class="container">
           <div class="row">
