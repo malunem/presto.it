@@ -5,8 +5,8 @@
         <div class="row">
             <div class="col-12 col-md-4">
                 <div class="card" style="width: 18rem;">
-                    <img src="https://picsum.photos/300" class="card-img-top" alt="{{$announcement->title}}">
-                    <div class="card-body">
+                      <img src="https://picsum.photos/300" class="card-img-top" alt="{{$announcement->title}}">
+                      <div class="card-body">
                       <h5 class="card-title">{{$announcement->title}}</h5>
                       <p class="card-text">{{$announcement->description}}</p>
                       <p class="card-text">{{$announcement->user->name}}</p>
@@ -16,8 +16,6 @@
                     </div>
                   </div>
             </div>
-                
-            
         </div>
         @endforeach
     </div>

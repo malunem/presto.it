@@ -10,7 +10,7 @@
     
 }
 
-*{
+* {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
@@ -18,7 +18,6 @@
 
 
 body{
-    background-color: var(--backgroundColor);
     min-height: 100vh;
     position: relative;
 
@@ -120,22 +119,46 @@ a {
 .custom-carousel{
     /* min-height: 50px!important; */
     z-index: -10;
-   
-  
-    }
-     .img-carousel{
-        width: 100vw;
-        max-height:863px;
-        min-height: 350px; 
-        ;
-    } 
+    min-width: 100vw;
+    min-height: 40vh;
+}
+.img-carousel-1{
+    background: linear-gradient( rgba(0,10,0,0.5), transparent), url("/img/foto1.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+.img-carousel-2{
+    background: linear-gradient( rgba(0,10,0,0.5), transparent), url("/img/foto2.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+.img-carousel-3{
+    background: linear-gradient( rgba(0,10,0,0.5), transparent), url("/img/foto3.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
 
-    .customPcarosello{
-        
-        font-size  : 5rem;
-    }
 
+.customPcarosello{
+    font-size  : 5rem;
+}
 
 .header{
     max-height: 50vh;
+}
+
+.text-custom{
+    color: var(--navColor);
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white; */
+
 }

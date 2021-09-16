@@ -19,42 +19,35 @@
             <div id="myCarousel" class="carousel slide carousel-fade custom-carousel" data-bs-ride="carousel">
               <div class="carousel-inner">
                 <div class="carousel-item active carousel-item-start">
-                  <div class="img-test">
-                    <h2></h2>
-                    <img class="display-block img-carousel img-fluid" src="/img/foto3.png">
+                  <div class="img-carousel-1">
                   </div>
           
                   <div class="container">
-                    <div class="carousel-caption text-start">
+                    <div class="carousel-caption text-start text-custom">
                       <h2>I tuoi acquisti a portata di click</h2> 
                       <h3>Veloce, reattivo e affidabile .</h3>
-                      <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
                     </div>
                   </div>
                 </div>
-                <div class="carousel-item carousel-item-next carousel-item-start">
-                  <div class="img-test">
-                    <img class="display-block img-carousel img-fluid" src="/img/foto1.png">
+                <div class="carousel-item carousel-item-next carousel-item-start img-carousel-2">
+                  <div class="">
                   </div>
           
                   <div class="container">
-                    <div class="carousel-caption">
-                      <h1>Another example headline.</h1>
-                      <p>Some representative placeholder content for the second slide of the carousel.</p>
-                      <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+                    <div class="carousel-caption text-start text-custom">
+                      <h2>I tuoi acquisti a portata di click</h2> 
+                      <h3>Veloce, reattivo e affidabile .</h3>
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="img-test">
-                    <img class="display-block img-carousel img-fluid" src="/img/foto2.png">
+                  <div class="img-carousel-3">
                   </div>
           
                   <div class="container">
-                    <div class="carousel-caption text-end">
-                      <h1>One more for good measure.</h1>
-                      <p>Some representative placeholder content for the third slide of this carousel.</p>
-                      <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+                    <div class="carousel-caption text-start text-custom">
+                      <h2>I tuoi acquisti a portata di click</h2> 
+                      <h3>Veloce, reattivo e affidabile .</h3>
                     </div>
                   </div>
                 </div>
