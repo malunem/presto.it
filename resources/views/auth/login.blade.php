@@ -2,9 +2,9 @@
     <x-slot name='title'>
         Login
     </x-slot>
-    <div class="container-fluid m-0 p-0">
-        <div class="row p-0 m-0 align-items-md-start">
-            <div class="col-12 col-md-4 offset-md-4 login-style">
+    <div class="container-fluid d-flex flex-column align-items-center m-0 p-0">
+        <div class="row p-0 m-0  custom-body-height">
+            <div class="col-12  mt-5 ">
                 @if ($errors->any())
                    <div class="alert alert-danger">
                       <ul>
@@ -31,7 +31,7 @@
                       </div>
                     <div class="mb-3 form-check">
                     </div>
-                    <button type="submit" class="btn ">Login</button>
+                    <button type="submit" class="btn btn-custom">Login</button>
                   </form>
             </div>
         </div>

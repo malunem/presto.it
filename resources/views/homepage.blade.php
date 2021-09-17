@@ -48,12 +48,12 @@
       </div>
     </div>
     
-    <div class="wrapper">
+    {{-- <div class="wrapper"> --}}
         <div class="container">
           <div class="row">
             <div class="col-12">
               <form class="d-flex mx-auto w-50 my-5" action="{{route('search')}}" method="GET">
-                <input class="form-control me-2" type="search" name="query" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" name="query" placeholder="Cerca annunci pubblicati" aria-label="Search">
                 <button class="btn btn-custom searchButton" type="submit">Search</button>
             </form>
             </div>
@@ -62,7 +62,7 @@
             <h1 class=" my-4 py-5 text-center">Annunci pubblicati</h1>
                 @foreach ($announcements as $announcement)
                 <div class="col-12 col-md-4">
-                    <div class="card my-3" style="width: 18rem;">
+                    <div class="card my-3" style="width: 22rem;">
                         <img class="img-fluid" src="https://picsum.photos/300" class="card-img-top" alt="{{$announcement->title}}">
                         <div class="card-body">
                           <h5 class="card-title">{{$announcement->title}} </h5>
@@ -78,5 +78,5 @@
                 @endforeach
             </div>
         </div>
-    </div>
+    {{-- </div> --}}
 </x-layout>

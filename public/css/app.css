@@ -16035,7 +16035,7 @@ a {
 } 
 
 .customPcarosello{
-    font-size  : 5rem;
+    font-size: 5rem;
 }
 
 .header{
@@ -16048,5 +16048,9 @@ a {
     font-weight: bolder;
     /* -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: white; */
+}
+
+.custom-body-height{
+   min-height: 70vh;
 }
 

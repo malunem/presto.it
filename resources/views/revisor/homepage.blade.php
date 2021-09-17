@@ -1,5 +1,6 @@
 <x-layout>
-    <main>
+    <main class="custom-body-height">
+          <h1 class="text-center mt-5">Articoli da revisionare</h1>
         @if ($announcement)
 
         <div class="wrapper">
@@ -16,7 +17,6 @@
                 </div>
             </div>
 
-
             <div class="row m-5">
               <!-- Product images -->
               <div class="col-3">
@@ -28,7 +28,6 @@
                 <h1 class="s-product-name">
                   {{$announcement->title}}
                 </h1>
-                
                 
               </p>
               <p class="m-0 p-0 lead strong display-7">
@@ -50,7 +49,6 @@
                 <img src="https://picsum.photos/103/125" alt="">
                 <img src="https://picsum.photos/104/125" alt="">
               </div>
-              
               
               <div class="my-5">
                 <h2>Descrizione prodotto:</h2>

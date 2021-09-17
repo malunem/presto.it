@@ -1,5 +1,4 @@
 <x-layout>
-  
 
     <div class="container px-5 my-5">
         <div class="row justify-content-center">
@@ -48,8 +47,7 @@
                         @foreach ($categories as $category)
                             <option value="{{$category->id}}">
                               {{$category->category}}
-                            </option>
-                            
+                            </option>   
                         @endforeach
                       </select>
 
@@ -71,7 +69,7 @@
       
                   <!-- Submit button -->
                   <div class="d-grid">
-                    <button type="submit" class="btn btn-primary mb-5">Submit</button>
+                    <button type="submit" class="btn btn-custom mb-5">Submit</button>
                   </div>
                 </form>
                 <!-- End of contact form -->
