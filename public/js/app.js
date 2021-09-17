@@ -3155,8 +3155,6 @@ function within(min, value, max) {
 
 $(function () {
   //document ready!!!
-  alert('ci sono');
-
   if ($("#drophere").length > 0) {
     var crsfToken = $('meta[name="csrf-token"]').attr('content');
     var uniqueSecret = $('input[name="uniqueSecret"]').attr('value');
@@ -3169,10 +3167,6 @@ $(function () {
     });
   }
 });
-/* document.querySelector(function(){
-
-    alert('ci sono');
-    }); */
 
 /***/ }),
 

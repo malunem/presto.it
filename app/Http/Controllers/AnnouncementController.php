@@ -47,5 +47,14 @@ class AnnouncementController extends Controller
         return view('announcement.detailAnnouncement', compact('announcement'));
 
     }
+    public function announcementimages(Request $request) {
+
+        $uniqueSecret = $request->input('uniqueSecret');
+        $fileName = $request->file('file')->store("public/temp/{$uniqueSecret}");
+        session()->push("images.{$uniqueSecret}", $fileName);
+        return response()->json(session()->get("images.{$uniqueSecret}"));
+
+        
+    }
 }
 

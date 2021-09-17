@@ -19,7 +19,7 @@
                 </div>
                 @endif
                 <h3>DEBUG: SECRET {{$uniqueSecret}}</h3>
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST" action="{{route('create.Announcement')}}" enctype="multipart/form-data">
+                <form id="contactForm" enctype="multipart/form-data" data-sb-form-api-token="API_TOKEN" method="POST" action="{{route('create.Announcement')}}" enctype="multipart/form-data">
                     @csrf
 
                     <input type="hidden" name="uniqueSecret" value="{{$uniqueSecret}}">

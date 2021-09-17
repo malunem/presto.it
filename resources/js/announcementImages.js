@@ -1,7 +1,7 @@
 $(function(){
     //document ready!!!
 
-    alert('ci sono');
+    
 
     if ($("#drophere").length > 0){
         
@@ -18,8 +18,3 @@ $(function(){
         });
     }
 })
-
-/* document.querySelector(function(){
-
-    alert('ci sono');
-    }); */
