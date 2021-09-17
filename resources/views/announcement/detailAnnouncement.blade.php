@@ -26,7 +26,7 @@
           <p class="m-0 p-0 lead strong display-7">
             {{$announcement->created_at->format('d/m/Y')}}
           </p>
-          <span class="lead strong display-6">{{$announcement->price}}</span>
+          <span class="lead strong display-6">{{$announcement->price}} €</span>
           
           <p class="s-product-price lead fw-bold my-3">
             <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>

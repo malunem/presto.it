@@ -54,7 +54,7 @@
             <div class="col-12">
               <form class="d-flex mx-auto w-50 my-5" action="{{route('search')}}" method="GET">
                 <input class="form-control me-2" type="search" name="query" placeholder="Cerca annunci pubblicati" aria-label="Search">
-                <button class="btn btn-custom searchButton" type="submit">Search</button>
+                <button class="btn btn-custom searchButton" type="submit">Cerca</button>
             </form>
             </div>
           </div>
@@ -69,9 +69,9 @@
                           <p class="card-text">{{Str::limit($announcement->description, 50)}}</p>
                           <p class="card-text">{{$announcement->user->name}}</p>
                           <p class="card-text">{{$announcement->created_at->format('d/m/Y')}}</p>
-                          <span class=" lead strong">{{$announcement->price}}</span> 
+                          <span class=" lead strong">{{$announcement->price}} € </span> 
                           <p class="card-text"> <a href="{{route('show.Category', $announcement->category_id)}}" class="text-decoration-none ">{{$announcement->category->category}}</a></p>
-                          <a href="{{route('show.DetailAnnouncement', $announcement)}}" class="btn btn-custom">Scopri di più</a>
+                          <a href="{{route('show.DetailAnnouncement', $announcement)}}" class="btn btn-custom">Vai al prodotto</a>
                         </div>
                       </div>
                 </div>  

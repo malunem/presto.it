@@ -1,7 +1,7 @@
 <x-layout>
     <main class="custom-body-height">
-          <h1 class="text-center mt-5">Articoli da revisionare</h1>
-        @if ($announcement)
+      @if ($announcement)
+      <h1 class="text-center mt-5">Annunci da revisionare</h1>
 
         <div class="wrapper">
     
@@ -81,7 +81,8 @@
 
         @else
 
-        <h3 class="text-center">Non ci sono annunci da revisionare</h3>
+
+        <h3 class="text-center text-dark mt-5 pt-5">Non ci sono annunci da revisionare</h3>
 
         @endif
 

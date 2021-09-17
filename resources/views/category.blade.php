@@ -12,7 +12,7 @@
                              <p class="card-text">{{$announcement->user->name}}</p>
                              <p class="card-text">{{$announcement->created_at->format('d/m/Y')}}</p>
                              <p class="card-text"> <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a></p>
-                             <a href="#" class="btn btn-custom">Go somewhere</a>
+                             <a href="{{route('show.DetailAnnouncement', $announcement)}}" class="btn btn-custom">Vai al prodotto</a>
                          </div>
                      </div>
                  </div>
