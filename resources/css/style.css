@@ -1,0 +1,165 @@
+:root{
+    --backgroundColor: #fbe8a6;
+    --vanillaColor: #f2f2f2; 
+    --accentColor: #C3DBF5 ;
+    --textColor:#8590AA;
+    --borderColor: #FFFFFF;
+    --grayColor: #303030;
+    --orangeColor: #ff8c00;
+    --navColor: #323B59;     
+}
+
+* {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    min-height: 100vh;
+    position: relative;
+} 
+.navbarcustom{
+    background-color: var(--navColor);
+}
+
+.footer{
+    background-color: var(--navColor);
+    position: static;
+    bottom: 0px;
+}
+
+.navbar-brand{
+    color: var(--orangeColor);
+}
+
+html body{
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2, h3, .h1, .h2, .h3 {
+    font-size: bold;
+    font-family: 'Roboto Mono', monospace; 
+}
+
+.logo{
+    height: 45px;
+    color: var(--orangeColor);
+}
+
+.footerlogo{
+    height: 65px;
+}
+
+.wrapper{
+    /* position: relative; */
+    margin-bottom: 17%;
+    height: auto;
+    width: 90%;
+    padding-left: 5%;
+    justify-content: center;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: white;
+}
+
+a {
+    color: var(--orangeColor);
+}
+
+/* .btn-custom{
+    border-color: 2px solid var(--navColor);
+    border-radius: 10px;
+} */
+      /* classi per i bottoni  */
+/* .btn-custom {
+    color: #fff;
+    background-color: var(--navColor);
+    border-color: var(--navColor);
+  }
+.btn-custom:hover {
+    color: var(--navColor);
+    background-color: white;
+    border-color: var(--orangeColor);
+    cursor: pointer;
+  } */
+.btn-custom{
+    display: inline-block;
+    text-decoration: none;
+    padding: 5px 5px;
+    color: white;
+    background-color: var(--navColor);
+    text-transform: capitalize  ;
+    border-radius: 0.25rem;
+}
+
+.btn-custom:hover{
+    color: var(--orangeColor);
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+} 
+
+@keyframes zoom{
+    /* 0% {transform: scale(1);} */
+   /* 25% {transform: scale(1.2);} */
+    /* 50% {transform: scale(1);} */
+    75% {transform: scale(1.2);}
+    /* 100% {transform: scale(1);} */
+}
+.carousel{
+    min-height: 40vh;
+}
+
+.custom-carousel{
+    /* min-height: 50px!important; */
+    z-index: -10;
+    min-width: 100vw;
+    min-height: 40vh;
+}
+.img-carousel-1{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto1.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+.img-carousel-2{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4)), url("/img/foto2.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+.img-carousel-3{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto3.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+
+.customPcarosello{
+    font-size: 5rem;
+}
+
+.header{
+    max-height: 50vh;
+}
+
+.text-custom h2, .text-custom h3{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white; */
+}
+
+.custom-body-height{
+   min-height: 70vh;
+}

@@ -1,6 +1,9 @@
 <?php
 
+use App\Http\Controllers\AnnouncementController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\RevisorController;
+use App\Models\Announcement;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -15,3 +18,17 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomeController::class,'index'])->name('homepage');
+Route::get('/announcement',[AnnouncementController::class,'newAnnouncement'])->name('newAnnouncement');
+Route::post('/createAnnouncement',[AnnouncementController::class,'createAnnouncement'])->name('create.Announcement');
+Route::post('/announcement/images/upload',[AnnouncementController::class,'announcementimages'])->name('announcement.images.upload');
+Route::get('/category/{category_id}', [HomeController::class, 'showCategory'])->name('show.Category');
+Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'showDetailAnnouncement'])->name('show.DetailAnnouncement');
+Route::get('/search',[HomeController::class,'search'])->name('search');
+
+
+// revisor area
+Route::get('/revisor/homepage',[RevisorController::class,'index'])->name('revisor.homepage');
+
+Route::post('/revisor/announcement/{id}/accept', [RevisorController::class, 'accept'])->name('revisor.accept');
+
+Route::post('/revisor/announcement/{id}/reject', [RevisorController::class, 'reject'])->name('revisor.reject');
