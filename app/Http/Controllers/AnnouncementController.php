@@ -19,7 +19,9 @@ class AnnouncementController extends Controller
     public function newAnnouncement(){
         $categories=Category::all();
 
-        return view('announcement.newAnnouncement',compact('categories'));
+        $uniqueSecret = base_convert(sha1(uniqid(mt_rand())), 16, 36);
+
+        return view('announcement.newAnnouncement',compact(['categories', 'uniqueSecret']));
     }
     
     public function createAnnouncement(AnnouncementRequest $request){
@@ -32,6 +34,10 @@ class AnnouncementController extends Controller
             // 'img'=>$request->file('img')->store('public/article/img')
             
         ]);
+
+        $uniqueSecret = $request->input('uniqueSecret');
+
+        dd($uniqueSecret);
    
         return redirect(route('homepage'))->with('message', "Ciao " .Auth::user()->name. " Il tuo annuncio è stato inserito");
     }

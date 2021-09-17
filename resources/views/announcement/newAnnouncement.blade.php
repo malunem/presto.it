@@ -18,8 +18,12 @@
                     </ul>
                 </div>
                 @endif
+                <h3>DEBUG: SECRET {{$uniqueSecret}}</h3>
                 <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST" action="{{route('create.Announcement')}}">
                     @csrf
+
+                    <input type="hidden" name="uniqueSecret" value="{{$uniqueSecret}}">
+
                   <!-- Name Input -->
                   <div class="form-floating mb-3">
                       <label for="title"></label>
@@ -52,6 +56,22 @@
                       </select>
 
                   </div>
+
+                  <div class="form-group row">
+                    <label for="images" class="col-md-12 col-form-label text-md-right">
+                      Immagini
+                    </label>
+                    <div class="col-md-12">
+                      <div class="dropzone" id="drophere"></div>
+
+                      @error('images')
+                          <span class="invalid-feedback" role="alert">
+                              <strong>{{$message}}</strong>
+                          </span>
+                      @enderror
+
+                    </div>
+                  </div>
       
                   <!-- Submit success message -->
                   <div class="d-none" id="submitSuccessMessage">
@@ -69,7 +89,7 @@
       
                   <!-- Submit button -->
                   <div class="d-grid">
-                    <button type="submit" class="btn btn-custom mb-5">Submit</button>
+                    <button type="submit" class="btn btn-custom mb-5">Pubblica annuncio</button>
                   </div>
                 </form>
                 <!-- End of contact form -->
