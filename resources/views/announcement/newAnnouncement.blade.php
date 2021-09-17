@@ -19,7 +19,7 @@
                 </div>
                 @endif
                 <h3>DEBUG: SECRET {{$uniqueSecret}}</h3>
-                <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST" action="{{route('create.Announcement')}}">
+                <form id="contactForm" data-sb-form-api-token="API_TOKEN" method="POST" action="{{route('create.Announcement')}}" enctype="multipart/form-data">
                     @csrf
 
                     <input type="hidden" name="uniqueSecret" value="{{$uniqueSecret}}">
@@ -102,16 +102,7 @@
       
       <!-- CDN Link to SB Forms Scripts -->
       <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
-
-
-
-
-
-
-
-
-
-
-
-
+      <script>
+        
+      </script>
 </x-layout>
