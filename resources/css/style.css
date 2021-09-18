@@ -1,5 +1,5 @@
 :root{
-    --backgroundColor: #fbe8a6;
+    --backgroundColor: #F5F6FA;
     --vanillaColor: #f2f2f2; 
     --accentColor: #C3DBF5 ;
     --textColor:#8590AA;
@@ -18,6 +18,7 @@
 body{
     min-height: 100vh;
     position: relative;
+    background-color: var(--backgroundColor);
 } 
 .navbarcustom{
     background-color: var(--navColor);
@@ -87,7 +88,7 @@ a {
 .btn-custom{
     display: inline-block;
     text-decoration: none;
-    padding: 5px 5px;
+    padding: 10px 7px;
     color: white;
     background-color: var(--navColor);
     text-transform: capitalize  ;
@@ -101,6 +102,24 @@ a {
     animation-iteration-count: initial;
     animation-direction: normal;
 } 
+.login-btn{
+    min-width: 5rem;
+    min-height: 1rem;
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    background-color: var(--navColor);
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+    margin-bottom: 10px;
+}
+.login-btn:hover{
+    color: var(--orangeColor);
+    animation-name: zoom;
+    animation-duration: 1s;
+    animation-iteration-count: initial;
+    animation-direction: normal;
+}
 
 @keyframes zoom{
     /* 0% {transform: scale(1);} */
@@ -177,6 +196,9 @@ a {
     width: 35vw;
     margin-top: 0;
     padding-top: 0;
+}
+.color-icons-custom{
+    color: var(--orangeColor);
 }
 
 @media screen and (max-width: 700px){
