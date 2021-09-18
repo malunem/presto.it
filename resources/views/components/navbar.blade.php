@@ -11,9 +11,12 @@
             <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('newAnnouncement')}}">Inserisci un annuncio</a>
+            <a class="nav-link" aria-current="page" href="{{route('newAnnouncement')}}">Inserisci un annuncio</a>
           </li>
-
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="{{route('revisor.request')}}">Vuoi diventare un revisore? Contattaci</a>
+          </li>
+          
           @guest
           <li class="nav-item">
             <a class="nav-link" href="{{route('login')}}">Login</a>
@@ -24,11 +27,11 @@
           @endguest
           @auth
           {{--Revisor home --}}
-
+          
           @if (Auth::user()->is_revisor)
-              <li class="nav-item">
-                <a class="nav-link" href="{{route('revisor.homepage')}}">Revisor home
-                    <span class="badge badge-pill badge-warning">
+          <li class="nav-item">
+            <a class="nav-link" href="{{route('revisor.homepage')}}">Revisor home
+              <span class="badge badge-pill badge-warning">
                         {{App\Models\Announcement::ToBeRevisionedCount()}}
                     </span>
                 </a>

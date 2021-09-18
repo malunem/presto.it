@@ -2,8 +2,11 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\ContactMail;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Mail;
 
 class RevisorController extends Controller
 {
@@ -34,4 +37,10 @@ class RevisorController extends Controller
     public function reject($announcement_id){
         return $this->setAccepted($announcement_id, false);
     }
+
+    
+
+
+
+  
 }

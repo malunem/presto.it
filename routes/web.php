@@ -28,7 +28,8 @@ Route::delete('/announcement/images',[AnnouncementController::class,'getImage'])
 Route::get('/category/{category_id}', [HomeController::class, 'showCategory'])->name('show.Category');
 Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'showDetailAnnouncement'])->name('show.DetailAnnouncement');
 Route::get('/search',[HomeController::class,'search'])->name('search');
-
+Route::get('/revisor/request',[HomeController::class,'revisorRequest'])->name('revisor.request');
+Route::post('/revisorSubmit', [HomeController::class, 'revisorSubmit'])->name('revisorSubmit');
 
 // revisor area
 Route::get('/revisor/homepage',[RevisorController::class,'index'])->name('revisor.homepage');
