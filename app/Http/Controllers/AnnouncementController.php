@@ -19,10 +19,10 @@ class AnnouncementController extends Controller
        $this->middleware('auth')->except(['showDetailAnnouncement']);
     
     }
-    public function newAnnouncement(){
+    public function newAnnouncement(Request $request){
         $categories=Category::all();
 
-        $uniqueSecret = base_convert(sha1(uniqid(mt_rand())), 16, 36);
+        $uniqueSecret = $request->old('uniqueSecret', base_convert(sha1(uniqid(mt_rand())), 16, 36));
 
         return view('announcement.newAnnouncement',compact(['categories', 'uniqueSecret']));
     }
@@ -40,12 +40,15 @@ class AnnouncementController extends Controller
 
         $uniqueSecret = $request->input('uniqueSecret');
 
-        $images=session()->get("images.{$uniqueSecret}");
+        $images=session()->get("images.{$uniqueSecret}", []);
+        $removedImages = session()->get("removedimages.{$uniqueSecret}", []);
+        $images = array_diff($images, $removedImages);
         foreach ($images as $image) {
             $i=new AnnouncementImage();
             $fileName=basename($image);
-            $file=Storage::move($image, "/public/announcements/{$announcement->id}/{$fileName}");
-            $i->file = $file;
+            $newFileName = "public/announcements/{$announcement->id}/{$fileName}";
+            $file=Storage::move($image, $newFileName); 
+            $i->file = $newFileName;
             $i->announcement_id = $announcement->id;
             $i->save();
         }
@@ -64,9 +67,38 @@ class AnnouncementController extends Controller
         $uniqueSecret = $request->input('uniqueSecret');
         $fileName = $request->file('file')->store("public/temp/{$uniqueSecret}");
         session()->push("images.{$uniqueSecret}", $fileName);
-        return response()->json(session()->get("images.{$uniqueSecret}"));
+        return response()->json(
+            [
+                'id' => $fileName
+            ]
+        );
 
         
+    }
+    public function removeImage(Request $request){
+
+        $uniqueSecret = $request->input('uniqueSecret');
+        $fileName = $request->input('id');
+
+        session()->push("removedimages.{$uniqueSecret}", $fileName);
+
+        Storage::delete($fileName);
+        return response()->json('ok');
+    }
+
+    public function getImages(Request $request){
+        $uniqueSecret = $request->input('uniqueSecret');
+        $images=session()->get("images.{$uniqueSecret}", []);
+        $removedImages = session()->get("removedimages.{$uniqueSecret}", []);
+        $images = array_diff($images, $removedImages);
+        $data = [];
+        foreach ($images as $image) {
+            $data[] = [
+                'id' => $image,
+                'src' => Storage::url($image)
+            ];
+        }
+        return response()->json($data);
     }
 }
 

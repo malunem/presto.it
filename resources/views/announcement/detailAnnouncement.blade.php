@@ -32,13 +32,34 @@
             <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>
           </p>
           
-          <div class="mini-imgs my-5 img-fluid">
+          <div class="row">
+            <div class="col-md-2">
+              <h3>immagini</h3>
+            </div>
+            <div class="col-md-10">
+              @foreach ($announcement->images as $image)
+              <div class="row mb-2">
+                <div class="col-12 col-md-4">
+                  <img src="{{ Storage::url($image->file)}}" class="rounded-circle mini-imgs" alt="">
+                </div>
+                {{-- <div class="col-md-8">
+                  {{$image->id}} <br>
+                  {{$image->file}} <br>
+                  {{Storage::url($image->file)}} <br>
+                </div> --}}
+              </div>
+                  
+              @endforeach
+            </div>
+          </div>
+
+          {{-- <div class="mini-imgs my-5 img-fluid">
             <img src="https://picsum.photos/100/125" alt="">
             <img src="https://picsum.photos/101/125" alt="">
             <img src="https://picsum.photos/102/125" alt="">
             <img src="https://picsum.photos/103/125" alt="">
             <img src="https://picsum.photos/104/125" alt="">
-          </div>
+          </div> --}}
           
           {{-- <p>Quantità nel carrello: <span id="cartQuantity">
             0 sd

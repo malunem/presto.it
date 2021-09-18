@@ -21,6 +21,10 @@ Route::get('/',[HomeController::class,'index'])->name('homepage');
 Route::get('/announcement',[AnnouncementController::class,'newAnnouncement'])->name('newAnnouncement');
 Route::post('/createAnnouncement',[AnnouncementController::class,'createAnnouncement'])->name('create.Announcement');
 Route::post('/announcement/images/upload',[AnnouncementController::class,'announcementimages'])->name('announcement.images.upload');
+Route::delete('/announcement/images/remove',[AnnouncementController::class,'removeImage'])->name('announcement.images.remove');
+
+Route::delete('/announcement/images',[AnnouncementController::class,'getImage'])->name('announcement.images');
+
 Route::get('/category/{category_id}', [HomeController::class, 'showCategory'])->name('show.Category');
 Route::get('/announcement/detail/{announcement}', [AnnouncementController::class, 'showDetailAnnouncement'])->name('show.DetailAnnouncement');
 Route::get('/search',[HomeController::class,'search'])->name('search');

@@ -16053,6 +16053,10 @@ a {
 .custom-body-height{
    min-height: 70vh;
 }
+
+.mini-imgs{
+    height: 340px;
+}
 .dropzone, .dropzone * {
   box-sizing: border-box;
 }
