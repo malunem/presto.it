@@ -168,6 +168,16 @@ a {
     width: 150px;
     height: 150px;
 }
+.side-header{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto2.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 89vh;
+    width: 35vw;
+    margin-top: 0;
+    padding-top: 0;
+}
 
 @media screen and (max-width: 700px){
     .mini-imgs{
@@ -175,5 +185,15 @@ a {
         height: 200px;
         margin-top: 20px;
         border-radius: 50%;
+    }
+    .side-header{
+        background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto2.png"); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100vw;
+        margin-top: 0;
+        padding-top: 0;
     }
   }
