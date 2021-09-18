@@ -46,7 +46,7 @@
                          @foreach ($announcement->images as $image)
                            <div class=" col-12 col-md-2">
                               <div class="mini-imgs">
-                                  <img src="{{ Storage::url($image->file)}}" class="rounded mini-imgs" alt="">
+                                  <img src="{{ Storage::url($image->file)}}" class="mini-imgs" alt="">
                               </div>
                            </div>
                          @endforeach
