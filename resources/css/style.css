@@ -165,5 +165,14 @@ a {
 }
 
 .mini-imgs{
-    height: 340px;
+    width: 150px;
+    height: 150px;
 }
+
+@media screen and (max-width: 700px){
+    .mini-imgs{
+        width: 200px;
+        height: 200px;
+        margin-top: 20px;
+    }
+  }
