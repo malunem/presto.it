@@ -15898,6 +15898,7 @@ body{
     position: relative;
     background-color: var(--backgroundColor);
 } 
+
 .navbarcustom{
     background-color: var(--navColor);
 }
@@ -16093,7 +16094,18 @@ a {
 }
 .color-icons-custom{
     color: var(--orangeColor);
+    background-color: #E8F0FE;
+    padding: 10px;
 }
+.form-width{
+   padding: 0;
+   margin: 0;
+   min-width: 15rem;
+   min-height: 2.5rem;
+   border: none;
+   outline: none;
+}
+
 
 @media screen and (max-width: 700px){
     .mini-imgs{

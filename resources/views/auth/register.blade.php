@@ -2,7 +2,7 @@
     <x-slot name='title'>
         Registrati
     </x-slot>
-    <div class="container-fluid m-0 p-0">
+    <div class="container-fluid m-0 p-0 custom-body-height">
         <div class="row backgroudColor align-items-md-center custom-container-style ">
             <div class="col-12 col-md-4 offset-md-4 mt-5">
                 @if ($errors->any())
@@ -14,9 +14,9 @@
                       </ul>
                   </div>
                 @endif
-                <h2 class="fs-1">Register</h2>
-                <form method="POST" action="{{route('register')}}">
-                    @csrf
+                <form method="POST" action="{{route('register')}}" class="p-5 m-0 bg-white">
+                  @csrf
+                  <h2 class="fs-1 mb-2">Register</h2>
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">Nome Utente</label>
                       <input type="text" class="form-control" name="name">

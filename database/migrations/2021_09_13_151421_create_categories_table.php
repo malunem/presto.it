@@ -19,7 +19,7 @@ class CreateCategoriesTable extends Migration
             $table->string('category');
             $table->timestamps();
         });
-        $categories=['libri','Musica,film Tv','Videogiochi e console','elettronica e informatica','casa,giardino,Fai da te e Animali','Alimentari e Cura della casa','Bellezza e salute','Giochi e Prima Infanzia','Vestiti,Scarpe,gioielli e accessori','Sport e Tempo Libero','Auto e Moto','Commercio,Industria e Scienza'];
+        $categories=['Libri','Musica, Film Tv','Videogiochi e Console','Elettronica e Informatica','Casa, Giardino,Fai da te e Animali','Alimentari e Cura della Casa','Bellezza e Salute','Giochi e Prima Infanzia','Vestiti, Scarpe, Gioielli e accessori','Sport e Tempo Libero','Auto e Moto','Commercio,Industria e Scienza'];
 
         foreach ($categories as $category) {
             $newCategory = new Category();

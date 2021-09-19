@@ -59,7 +59,7 @@
             </div>
           </div>
           <div class="row">
-            <h1 class=" my-4 py-5 text-center">Annunci pubblicati</h1>
+            <h1 class=" my-2 py-4 text-center">Annunci pubblicati</h1>
                 @foreach ($announcements as $announcement)
                 <div class="col-12 col-md-4 ">
                     <div class="card shadow my-3" style="width: 22rem;">
