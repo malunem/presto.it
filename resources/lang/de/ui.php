@@ -1,0 +1,37 @@
+<?php 
+
+return [
+  'home' => ' Startseite',
+  'login' => 'Anmeldung',
+  'register'=> 'Einloggen',
+  'logout' => 'Ausloggen',
+  'button' => 'weiter zum Produkt',
+  'images' => 'Bilder',
+  'acept' => 'annehmen',
+  'refuses' => 'verweigert',
+  'email' => 'email',
+  'password' => 'passwort',
+  'confirmPassword' => 'Passwort bestätigen',
+  'username' => 'Nutzername',
+  'description' => 'Produktbeschreibung',
+  'AnnouncementDescription' => ' Werbebeschreibung',
+  'request'=> 'Sagen Sie uns, warum Sie Rezensent werden möchten',
+  'message'=> 'Gib deine Nachricht ein',
+  'submit' => 'einreichen',
+  'newListingnav'=> 'eine Anzeige aufgeben',
+  'newListing' => 'Geben Sie Ihre Anzeige ein',
+  'insertImg' => 'füge deine Bilder ein',
+  'profile' => 'willkommen',
+  'category' => 'Kategorien',
+  'revisor' => 'Rezensentenseite',
+  'review' => 'zu überprüfende Artikel',
+  'noRevisor' => 'Sie haben keine Artikel zu überprüfen',
+  'find' => 'suchen nach',
+  'findCategory' => 'Suche unter den veröffentlichten Ankündigungen',
+  'latestListing' => 'Letzte Ankündigungen veröffentlicht',
+  'workWithUs' => ' Sie möchten Wirtschaftsprüfer werden? Kontaktiere uns',
+  'welcome' => 'Willkommen auf Presto.it!',
+  'carousel' => 'Ihre Einkäufe nur einen Klick entfernt, schnell reagierend und zuverlässig',
+
+  
+];

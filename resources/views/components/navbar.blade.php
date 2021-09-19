@@ -21,6 +21,10 @@
           </li>
 
           <li class="nav-item">
+            @include('layouts._locale', ['lang'=> 'de', 'nation' => 'de'])
+          </li>
+
+          <li class="nav-item">
             <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">{{__('ui.home')}}</a>
           </li>
 
