@@ -11,8 +11,8 @@
             
             <!-- Product details -->
                 <div class="col-12 col-md-9">
-                    <div class="row ">
-                        <h2 class="s-product-name ">
+                    <div class="row">
+                        <h2 class="s-product-name">
                           {{$announcement->title}}
                         </h2>
                       
@@ -20,7 +20,7 @@
                           {{$announcement->user->name}}
                         </p>
 
-                        <p class="mx-3 p-0 lead  display-7">
+                        <p class="mx-3 p-0 lead display-7">
                           {{$announcement->created_at->format('d/m/Y')}}
                         </p>
                         <span class="lead strong display-6">{{$announcement->price}}€</span>
@@ -32,11 +32,11 @@
                             <h3>{{__('ui.images')}}</h3> 
                         </div>
                     </div>
-                    <div class="row mt-2 h-50 align-items-md-start align-items-end">
+                    <div class="row mt-2 h-50 justify-content-sm-center">
                        @foreach ($announcement->images as $image)
-                         <div class=" col-12 col-md-2">
+                         <div class="col-12 col-md-4 mb-2">
                             <div class="mini-imgs">
-                                <img src="{{ $image->getUrl(300, 150)}}" class="mini-imgs" alt="">
+                                <img src="{{ $image->getUrl(300, 150)}}" alt="">
                             </div>
                          </div>
                        @endforeach
