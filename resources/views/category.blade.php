@@ -1,10 +1,10 @@
 <x-layout>
     <div class="container">
         <div class="row">
-            <h1 class="text-center mt-5">{{$category_name}}</h1> 
+            <h1 class="text-center my-5">{{$category_name}}</h1> 
              @foreach ($announcements as $announcement)
                  <div class="col-12 col-md-4 mb-4 d-flex">
-                     <div class="card" style="width: 22rem;">
+                     <div class="card shadow" style="width: 22rem;">
                          <img src="https://picsum.photos/300" class="card-img-top" alt="{{$announcement->title}}">
                          <div class="card-body">
                              <h5 class="card-title">{{$announcement->title}}</h5>

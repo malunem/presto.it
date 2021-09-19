@@ -12,17 +12,18 @@
             <!-- Product details -->
                 <div class="col-12 col-md-9">
                     <div class="row ">
-                        <h2 class="s-product-name text-capitalize">
+                        <h2 class="s-product-name ">
                           {{$announcement->title}}
                         </h2>
                       
-                        <p class="mx-3 p-0 lead strong display-7 ">
+                        <p class="mx-3 p-0 lead strong ">
                           {{$announcement->user->name}}
                         </p>
-                        <p class="mx-3 p-0 lead strong display-7">
+
+                        <p class="mx-3 p-0 lead  display-7">
                           {{$announcement->created_at->format('d/m/Y')}}
                         </p>
-                        <span class="lead strong display-6">{{$announcement->price}}</span>
+                        <span class="lead strong display-6">{{$announcement->price}}€</span>
                     
                         <p class="s-product-price lead fw-bold my-3">
                           <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>

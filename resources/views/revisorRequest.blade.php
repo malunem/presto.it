@@ -1,7 +1,6 @@
 <x-layout>
 
-
-    <div class="container mt-5">
+    <div class="container mt-5 custom-body-height">
         @if ($errors->any())
                  <div class="alert alert-danger">
                        <ul>

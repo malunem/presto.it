@@ -16,9 +16,9 @@
            
               <div class="row m-5">
               <!-- Product images -->
-                  <div class="col-12 col-md-3">
-                      <x-carousel/>
-                  </div>
+              <div class="col-12 col-md-3">
+                <x-carousel/>
+              </div>
               
               <!-- Product details -->
                   <div class="col-12 col-md-9">
@@ -93,6 +93,11 @@
          
         <h3 class="text-center text-dark mt-5 pt-5">{{__('ui.noRevisor')}}</h3>
 
-      @endif
-    </main>    
+          </div>
+          @else
+          
+          <h3 class="text-center text-dark mt-5 pt-5">Non ci sono annunci da revisionare</h3>
+          
+          @endif
+        </main>    
 </x-layout>
