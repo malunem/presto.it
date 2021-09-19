@@ -25,21 +25,21 @@
           </li>
 
           <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="{{route('homepage')}}">{{__('ui.home')}}</a>
+            <a class="nav-link active text-capitalize" aria-current="page" href="{{route('homepage')}}">{{__('ui.home')}}</a>
           </li>
 
           
           @guest
           <li class="nav-item">
-            <a class="nav-link" href="{{route('login')}}">{{__('ui.login')}}</a>
+            <a class="nav-link text-capitalize" href="{{route('login')}}">{{__('ui.login')}}</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{route('register')}}">{{__('ui.register')}}</a>
+            <a class="nav-link text-capitalize" href="{{route('register')}}">{{__('ui.register')}}</a>
           </li>
           @endguest
           @auth
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="{{route('newAnnouncement')}}">{{__('ui.newListingnav')}}</a>
+            <a class="nav-link text-capitalize" aria-current="page" href="{{route('newAnnouncement')}}">{{__('ui.newListingnav')}}</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{route('revisor.request')}}">{{__('ui.workWithUs')}}</a>
@@ -57,7 +57,7 @@
           @endif
 
           <li class="nav-item">
-            <a class="nav-link " href="#">{{__('ui.profile')}} {{Auth::user()->name}}</a>
+            <a class="nav-link text-capitalize" href="#">{{__('ui.profile')}} {{Auth::user()->name}}</a>
           </li>
            <li class="nav-item"><a class="nav-link "  href="{{route('logout')}}" onclick="event.preventDefault();
             document.getElementById('form-logout').submit();">{{__('ui.logout')}}</a></li>

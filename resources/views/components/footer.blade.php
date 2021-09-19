@@ -25,8 +25,8 @@
                         Cosa aspetti? Comincia subito a comprare online su presto.it!</p>          
                 </div>
 
-                <div class="col-12 mt-4  d-flex align-items-center justify-content-center">
-                    <p >©️ 2021 presto Srl P.iva: 01206540559 – Sede Legale: Via A.M. Angelini, 12 - 05100 Terni - tel:07442462 Capitale sociale: Euro 119.000 – Iscrizione al Registro delle Imprese di Terni n.01206540559</p>
+                <div class="col-12 mt-4 d-flex align-items-center justify-content-center">
+                    <p class="fw-lighter small">©️ 2021 presto Srl P.iva: 01206540559 – Sede Legale: Via A.M. Angelini, 12 - 05100 Terni - tel:07442462 Capitale sociale: Euro 119.000 – Iscrizione al Registro delle Imprese di Terni n.01206540559</p>
                 </div>
 
                 </div> 

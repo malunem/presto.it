@@ -21,7 +21,7 @@
             <div class="col-12 col-md-6 d-flex justify-content-center flex-column align-items-center">
                 <form method="POST" action="{{route('login')}}" class="p-5 m-0 bg-white ">
                     @csrf
-                    <h2 class="fs-1 mb-3 ">{{__('ui.login')}}</h2>
+                    <h2 class="fs-1 mb-3 text-capitalize">{{__('ui.login')}}</h2>
                     <div class="mb-3">
                         <label for="exampleInputEmail1" class="form-label">{{__('ui.email')}}</label>
                         <div class="d-flex">

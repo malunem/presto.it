@@ -14,8 +14,8 @@
                       </ul>
                   </div>
                 @endif
-                <h2 class="fs-1">{{__('ui.register')}}</h2>
-                <form method="POST" action="{{route('register')}}">
+                <form method="POST" action="{{route('register')}}" class="bg-white p-5 mb-3">
+                  <h2 class="fs-1 text-capitalize">{{__('ui.register')}}</h2>
                     @csrf
                     <div class="mb-3">
                       <label for="exampleInputEmail1" class="form-label">{{__('ui.username')}}</label>

@@ -18,7 +18,7 @@
                     </ul>
                 </div>
                 @endif
-                <h3>DEBUG: SECRET {{$uniqueSecret}}</h3>
+                {{-- <h3>DEBUG: SECRET {{$uniqueSecret}}</h3> --}}
                 <form id="contactForm" enctype="multipart/form-data" data-sb-form-api-token="API_TOKEN" method="POST" action="{{route('create.Announcement')}}" enctype="multipart/form-data">
                     @csrf
 
@@ -41,7 +41,7 @@
       
                   <!-- Message Input -->
                   <div class="form-floating mb-3">
-                      <input type="text" id="price" name="price" placeholder="prezzo"/>
+                      <input type="text" id="price" name="price" placeholder="Prezzo"/>
             
                     <div class="invalid-feedback" data-sb-feedback="price:required">price is required.</div>
 

@@ -45,10 +45,10 @@ class AnnouncementController extends Controller
         $removedImages = session()->get("removedimages.{$uniqueSecret}", []);
         $images = array_diff($images, $removedImages);
         foreach ($images as $image) {
-            $i=new AnnouncementImage();
-            $fileName=basename($image);
+            $i = new AnnouncementImage();
+            $fileName = basename($image);
             $newFileName = "public/announcements/{$announcement->id}/{$fileName}";
-            $file=Storage::move($image, $newFileName);
+            $file = Storage::move($image, $newFileName);
             
             dispatch(new ResizeImage(
                 $newFileName,
@@ -111,10 +111,14 @@ class AnnouncementController extends Controller
 
     public function getImages(Request $request){
         $uniqueSecret = $request->input('uniqueSecret');
+
         $images=session()->get("images.{$uniqueSecret}", []);
         $removedImages = session()->get("removedimages.{$uniqueSecret}", []);
+        
         $images = array_diff($images, $removedImages);
+        
         $data = [];
+
         foreach ($images as $image) {
             $data[] = [
                 'id' => $image,

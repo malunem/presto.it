@@ -46,7 +46,7 @@
                          @foreach ($announcement->images as $image)
                            <div class=" col-12 col-md-2">
                               <div class="mini-imgs">
-                                  {{-- <img src="{{ $image->getUrl(300, 150  )}}" class="mini-imgs" alt=""> --}}
+                                  <img src="{{ $image->getUrl(300, 150)}}" class="mini-imgs" alt="">
                               </div>
                            </div>
                          @endforeach
@@ -91,8 +91,10 @@
           </div>
       @else
          
-        <h3 class="text-center text-dark mt-5 pt-5">{{__('ui.noRevisor')}}</h3>
-          
+      <div class="col-12 d-flex flex-column align-items-center">
+          <h3 class=" text-dark mt-5 pt-5">{{__('ui.noRevisor')}}</h3>
+          <img src="{{asset('img/done-icon.png')}}" alt="" width="200px" height="200px" class="mt-5">
+        </div>
           @endif
         </main>    
 </x-layout>

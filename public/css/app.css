@@ -16079,7 +16079,7 @@ a {
 }
 
 .mini-imgs{
-    width: 150px;
+    width: 300px;
     height: 150px;
 }
 .side-header{
@@ -16109,8 +16109,8 @@ a {
 
 @media screen and (max-width: 700px){
     .mini-imgs{
-        width: 200px;
-        height: 200px;
+        width: 300px;
+        height: 150px;
         margin-top: 20px;
         border-radius: 50%;
     }
