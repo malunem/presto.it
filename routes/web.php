@@ -18,6 +18,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/',[HomeController::class,'index'])->name('homepage');
+Route::post('/locale/{locale}', [HomeController::class, 'locale'])->name('locale');
 Route::get('/announcement',[AnnouncementController::class,'newAnnouncement'])->name('newAnnouncement');
 Route::post('/createAnnouncement',[AnnouncementController::class,'createAnnouncement'])->name('create.Announcement');
 Route::post('/announcement/images/upload',[AnnouncementController::class,'announcementimages'])->name('announcement.images.upload');
@@ -37,3 +38,4 @@ Route::get('/revisor/homepage',[RevisorController::class,'index'])->name('reviso
 Route::post('/revisor/announcement/{id}/accept', [RevisorController::class, 'accept'])->name('revisor.accept');
 
 Route::post('/revisor/announcement/{id}/reject', [RevisorController::class, 'reject'])->name('revisor.reject');
+

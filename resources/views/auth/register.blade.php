@@ -1,6 +1,6 @@
 <x-layout>
     <x-slot name='title'>
-        Registrati
+      {{__('ui.register')}}
     </x-slot>
     <div class="container-fluid m-0 p-0">
         <div class="row backgroudColor align-items-md-center custom-container-style ">
@@ -14,28 +14,28 @@
                       </ul>
                   </div>
                 @endif
-                <h2 class="fs-1">Register</h2>
+                <h2 class="fs-1">{{__('ui.register')}}</h2>
                 <form method="POST" action="{{route('register')}}">
                     @csrf
                     <div class="mb-3">
-                      <label for="exampleInputEmail1" class="form-label">Nome Utente</label>
+                      <label for="exampleInputEmail1" class="form-label">{{__('ui.username')}}</label>
                       <input type="text" class="form-control" name="name">
                     </div>
                     <div class="mb-3">
-                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <label for="exampleInputEmail1" class="form-label">{{__('ui.email')}}</label>
                         <input type="email" class="form-control" name="email">
                       </div>
                       <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <label for="exampleInputPassword1" class="form-label">{{__('ui.password')}}</label>
                         <input type="password" class="form-control" name="password">
                       </div>
                       <div class="mb-3">
-                        <label for="exampleInputPassword1" class="form-label">Repiti la Password</label>
+                        <label for="exampleInputPassword1" class="form-label">{{__('ui.confirmPassword')}}</label>
                         <input type="password" class="form-control" name="password_confirmation">
                       </div>
                     <div class="mb-3 form-check">
                     </div>
-                    <button type="submit" class="btn btn-custom mb-3">Registrati</button>
+                    <button type="submit" class="btn btn-custom mb-3"> {{__('ui.register')}}</button>
                   </form>
             </div>
         </div>

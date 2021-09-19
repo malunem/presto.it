@@ -6,7 +6,7 @@
             <div class="card border-0 rounded-3 shadow-lg">
               <div class="card-body p-4">
                 <div class="text-center">
-                  <div class="h1 fw-light">Inserisci il tuo annuncio</div>
+                  <div class="h1 fw-light">{{__('ui.newListing')}}</div>
                 </div>
       
                 @if ($errors->any())
@@ -25,6 +25,7 @@
                     <input type="hidden" name="uniqueSecret" value="{{$uniqueSecret}}">
 
                   <!-- Name Input -->
+                
                   <div class="form-floating mb-3">
                       <label for="title"></label>
                     <input class="form-control" id="title" type="text" placeholder="titolo" data-sb-validations="required" name="title" value="{{old('title')}}"/>
@@ -45,9 +46,10 @@
                     <div class="invalid-feedback" data-sb-feedback="price:required">price is required.</div>
 
                   </div>
-
+                  {{__('ui.category')}}
                   <div class="form-floating mb-3">
                     <select name="category_id">
+                      
                         @foreach ($categories as $category)
                             <option value="{{$category->id}}">
                               {{$category->category}}
@@ -59,7 +61,7 @@
 
                   <div class="form-group row">
                     <label for="images" class="col-md-12 col-form-label text-md-right">
-                      Inserisci le tue Immagini
+                      {{__('ui.insertImg')}}
                     </label>
                     <div class="col-md-12">
                       <div class="dropzone" id="drophere"></div>
@@ -89,7 +91,7 @@
       
                   <!-- Submit button -->
                   <div class="d-grid">
-                    <button type="submit" class="btn btn-custom mb-5">Pubblica annuncio</button>
+                    <button type="submit" class="btn btn-custom mb-5">{{__('ui.newListing')}}</button>
                   </div>
                 </form>
                 <!-- End of contact form -->

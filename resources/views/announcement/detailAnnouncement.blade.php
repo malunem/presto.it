@@ -28,14 +28,14 @@
                           <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>
                         </p>
                         <div class="mt-2">
-                            <h3>Immagini</h3> 
+                            <h3>{{__('ui.images')}}</h3> 
                         </div>
                     </div>
                     <div class="row mt-2 h-50 align-items-md-start align-items-end">
                        @foreach ($announcement->images as $image)
                          <div class=" col-12 col-md-2">
                             <div class="mini-imgs">
-                                <img src="{{ Storage::url($image->file)}}" class="mini-imgs" alt="">
+                                <img src="{{ $image->getUrl(300, 150)}}" class="mini-imgs" alt="">
                             </div>
                          </div>
                        @endforeach
@@ -51,7 +51,7 @@
                 </div>
                 --}}
                 <div class="col-12 my-5">
-                  <h2>Descrizione prodotto:</h2>
+                  <h2>{{__('ui.description')}}:</h2>
                   <p class="s-product-description">
                   {{$announcement->description}}
                   </p>

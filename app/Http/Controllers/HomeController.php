@@ -53,5 +53,10 @@ class HomeController extends Controller
         return redirect(route('homepage'))->with('message', 'Grazie per averci contattato');
     }
 
+    public function locale($locale){
+        
+        session()->put('locale',$locale);
+        return redirect()->back();
+    }
 }
 

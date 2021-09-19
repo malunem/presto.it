@@ -29,12 +29,12 @@
   
                   <div class="">
                   
-                      <label for="exampleInputText1" class="form-label my-3 p-2"><h4 class="form-txt">Ciao {{Auth::user()->name}}, spiegaci perchè vuoi essere revisore.</h4> </label>
+                      <label for="exampleInputText1" class="form-label my-3 p-2"><h4 class="form-txt">{{__('ui.profile')}} {{Auth::user()->name}},{{__('ui.request')}}.</h4> </label>
   
-                      <textarea class="form-control" name="message" id="" cols="50" rows="10" placeholder="Inserisci il tuo messaggio"></textarea>
+                      <textarea class="form-control" name="message" id="" cols="50" rows="10" placeholder="{{__('ui.message')}}"></textarea>
                   </div>
   
-                  <button type="submit" class="btn btn-custom mt-3 mb-4">Submit</button>
+                  <button type="submit" class="btn btn-custom mt-3 mb-4">{{__('ui.submit')}}</button>
               </form>
           </div>
       </div>
@@ -42,6 +42,8 @@
 
     
 
+
+    
 
 
 </x-layout>

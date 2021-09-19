@@ -1,12 +1,12 @@
 <x-layout>
     <main class="custom-body-height">
       @if ($announcement)
-        <h1 class="text-center mt-5">Annunci da revisionare</h1>
+        <h1 class="text-center mt-5">{{__('ui.review')}}</h1>
     
           <div class="container-fluid mt-md-4 py-md-2">
               <div class="row m-5">
                   <div class="col-12">
-                      <h3>Dettagli annuncio:</h3>
+                      <h3>{{__('ui.AnnouncementDescription')}}:</h3>
                       <p class="px-2">ID annuncio #{{$announcement->id}}</p>
                       <p class="px-2">ID utente #{{$announcement->user->id}}</p>
                       <p class="px-2">Nome utente: {{$announcement->user->name}}</p>
@@ -39,14 +39,14 @@
                             <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>
                           </p>
                           <div class="mt-2">
-                              <h3>Immagini</h3> 
+                              <h3>{{__('ui.images')}}</h3> 
                           </div>
                       </div>
                       <div class="row mt-2 h-50 align-items-md-start align-items-end">
                          @foreach ($announcement->images as $image)
                            <div class=" col-12 col-md-2">
                               <div class="mini-imgs">
-                                  <img src="{{ Storage::url($image->file)}}" class="mini-imgs" alt="">
+                                  {{-- <img src="{{ $image->getUrl(300, 150  )}}" class="mini-imgs" alt=""> --}}
                               </div>
                            </div>
                          @endforeach
@@ -62,7 +62,7 @@
                   </div>
                   --}}
                   <div class="col-12 my-5">
-                    <h2>Descrizione prodotto:</h2>
+                    <h2>{{__('ui.description')}}:</h2>
                     <p class="s-product-description">
                     {{$announcement->description}}
                     </p>
@@ -75,14 +75,14 @@
                           <form action="{{route('revisor.reject', $announcement->id)}}" method="POST" class="d-inline">
                               @csrf
                               <button type="submit" class="btn btn-danger mb-2">
-                                  Rifiuta
+                                {{__('ui.refuses')}}
                               </button>
                           </form>
 
                           <form action="{{route('revisor.accept', $announcement->id)}}" method="POST" class="d-inline">
                               @csrf
                               <button type="submit" class="btn btn-success mb-2">
-                                  Accetta
+                                {{__('ui.acept')}}
                               </button>
                           </form>
                       </div>
@@ -91,7 +91,7 @@
           </div>
       @else
          
-        <h3 class="text-center text-dark mt-5 pt-5">Non ci sono annunci da revisionare</h3>
+        <h3 class="text-center text-dark mt-5 pt-5">{{__('ui.noRevisor')}}</h3>
 
       @endif
     </main>    

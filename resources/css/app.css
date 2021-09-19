@@ -6,3 +6,5 @@
 /* dropzone ?*/
 @import '~dropzone/dist/basic';
 @import '~dropzone/dist/dropzone';
+/* flagsicon */
+@import '~flag-icon-css/css/flag-icon';
