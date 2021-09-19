@@ -92,11 +92,6 @@
       @else
          
         <h3 class="text-center text-dark mt-5 pt-5">{{__('ui.noRevisor')}}</h3>
-
-          </div>
-          @else
-          
-          <h3 class="text-center text-dark mt-5 pt-5">Non ci sono annunci da revisionare</h3>
           
           @endif
         </main>    
