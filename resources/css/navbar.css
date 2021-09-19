@@ -1,0 +1,7 @@
+.navbarcustom{
+    background-color: var(--navColor);
+}
+
+.navbar-brand{
+    color: var(--orangeColor);
+}

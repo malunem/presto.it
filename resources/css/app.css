@@ -2,6 +2,11 @@
 @import'~@fortawesome/fontawesome-free/css/all';
 @import url('https://fonts.googleapis.com/css2?family=Zen+Loop&display=swap%27');
 @import'style';
+@import'btn';
+@import'carousel';
+@import'logo';
+@import'header';
+@import'navbar';
 
 /* dropzone ?*/
 @import '~dropzone/dist/basic';

@@ -15899,20 +15899,6 @@ body{
     background-color: var(--backgroundColor);
 } 
 
-.navbarcustom{
-    background-color: var(--navColor);
-}
-
-.footer{
-    background-color: var(--navColor);
-    position: static;
-    bottom: 0px;
-}
-
-.navbar-brand{
-    color: var(--orangeColor);
-}
-
 html body{
     margin: 0;
     padding: 0;
@@ -15923,13 +15909,14 @@ h1, h2, h3, .h1, .h2, .h3 {
     font-family: 'Roboto Mono', monospace; 
 }
 
-.logo{
-    height: 45px;
-    color: var(--orangeColor);
+.custom-body-height{
+    min-height: 70vh;
 }
 
-.footerlogo{
-    height: 65px;
+.footer{
+    background-color: var(--navColor);
+    position: static;
+    bottom: 0px;
 }
 
 .wrapper{
@@ -15948,22 +15935,35 @@ a {
     color: var(--orangeColor);
 }
 
-/* .btn-custom{
-    border-color: 2px solid var(--navColor);
-    border-radius: 10px;
-} */
-      /* classi per i bottoni  */
-/* .btn-custom {
-    color: #fff;
-    background-color: var(--navColor);
-    border-color: var(--navColor);
+.mini-imgs{
+    width: 300px;
+    height: 150px;
+}
+
+.color-icons-custom{
+    color: var(--orangeColor);
+    background-color: #E8F0FE;
+    padding: 10px;
+}
+.form-width{
+   padding: 0;
+   margin: 0;
+   min-width: 15rem;
+   min-height: 2.5rem;
+   border: none;
+   outline: none;
+}
+
+@media screen and (max-width: 700px){
+    .mini-imgs{
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        padding-right: 50px;
+    }
   }
-.btn-custom:hover {
-    color: var(--navColor);
-    background-color: white;
-    border-color: var(--orangeColor);
-    cursor: pointer;
-  } */
+
+  
 .btn-custom{
     display: inline-block;
     text-decoration: none;
@@ -16023,6 +16023,24 @@ a {
     75% {transform: scale(1.2);}
     /* 100% {transform: scale(1);} */
 }
+
+/* .btn-custom{
+    border-color: 2px solid var(--navColor);
+    border-radius: 10px;
+} */
+      /* classi per i bottoni  */
+/* .btn-custom {
+    color: #fff;
+    background-color: var(--navColor);
+    border-color: var(--navColor);
+  }
+.btn-custom:hover {
+    color: var(--navColor);
+    background-color: white;
+    border-color: var(--orangeColor);
+    cursor: pointer;
+  } */
+
 .carousel{
     min-height: 40vh;
 }
@@ -16062,6 +16080,25 @@ a {
     font-size: 5rem;
 }
 
+ .logo{
+    height: 45px;
+    color: var(--orangeColor);
+}
+
+.footerlogo{
+    height: 65px;
+}
+.side-header{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto2.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 89vh;
+    width: 35vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
 .header{
     max-height: 50vh;
 }
@@ -16074,46 +16111,8 @@ a {
     -webkit-text-stroke-color: white; */
 }
 
-.custom-body-height{
-   min-height: 70vh;
-}
-
-.mini-imgs{
-    width: 300px;
-    height: 150px;
-}
-.side-header{
-    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto2.png"); 
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 89vh;
-    width: 35vw;
-    margin-top: 0;
-    padding-top: 0;
-}
-.color-icons-custom{
-    color: var(--orangeColor);
-    background-color: #E8F0FE;
-    padding: 10px;
-}
-.form-width{
-   padding: 0;
-   margin: 0;
-   min-width: 15rem;
-   min-height: 2.5rem;
-   border: none;
-   outline: none;
-}
-
-
 @media screen and (max-width: 700px){
-    .mini-imgs{
-        margin-top: 20px;
-        display: flex;
-        justify-content: center;
-        padding-right: 50px;
-    }
+  
     .side-header{
         background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto2.png"); 
         background-position: center;
@@ -16126,7 +16125,13 @@ a {
     }
   }
 
-  
+.navbarcustom{
+    background-color: var(--navColor);
+}
+
+.navbar-brand{
+    color: var(--orangeColor);
+}
 .dropzone, .dropzone * {
   box-sizing: border-box;
 }

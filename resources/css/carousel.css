@@ -1,0 +1,38 @@
+.carousel{
+    min-height: 40vh;
+}
+
+.custom-carousel{
+    /* min-height: 50px!important; */
+    z-index: -10;
+    min-width: 100vw;
+    min-height: 40vh;
+}
+.img-carousel-1{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto1.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+.img-carousel-2{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4)), url("/img/foto2.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+.img-carousel-3{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto3.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 60vh;
+    z-index: 3;
+} 
+
+.customPcarosello{
+    font-size: 5rem;
+}

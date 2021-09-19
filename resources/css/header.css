@@ -1,0 +1,36 @@
+.side-header{
+    background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto2.png"); 
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 89vh;
+    width: 35vw;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+.header{
+    max-height: 50vh;
+}
+
+.text-custom h2, .text-custom h3{
+    color: white;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    /* -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: white; */
+}
+
+@media screen and (max-width: 700px){
+  
+    .side-header{
+        background: linear-gradient( rgba(0,10,0,0.4),rgba(0,10,0,0.4) ), url("/img/foto2.png"); 
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        height: 30vh;
+        width: 100vw;
+        margin-top: 0;
+        padding-top: 0;
+    }
+  }
