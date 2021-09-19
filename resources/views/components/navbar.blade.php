@@ -59,7 +59,7 @@
           <li class="nav-item">
             <a class="nav-link text-capitalize" href="#">{{__('ui.profile')}} {{Auth::user()->name}}</a>
           </li>
-           <li class="nav-item"><a class="nav-link "  href="{{route('logout')}}" onclick="event.preventDefault();
+           <li class="nav-item"><a class="nav-link text-capitalize"  href="{{route('logout')}}" onclick="event.preventDefault();
             document.getElementById('form-logout').submit();">{{__('ui.logout')}}</a></li>
             <form method="POST" action="{{route('logout')}}" id="form-logout">
               @csrf

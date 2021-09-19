@@ -57,8 +57,6 @@
                   {{$announcement->description}}
                   </p>
                 </div>
-            </div>   
-
-           
+            </div>          
   </main>    
 </x-layout>
