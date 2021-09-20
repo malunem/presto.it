@@ -121,9 +121,9 @@
         </div>
         @else
         
-        <div class="col-12 d-flex flex-column align-items-center">
+        <div class="col-12 d-flex flex-column align-items-center mb-5">
           <h3 class=" text-dark mt-5 pt-5">{{__('ui.noRevisor')}}</h3>
-          <img src="{{asset('img/done-icon.png')}}" alt="" width="200px" height="200px" class="mt-5">
+          <img src="{{asset('img/done-icon.png')}}" alt="" width="200px" height="200px" class="mt-5 mb-5">
         </div>
         @endif
         <div class="row">
