@@ -6,7 +6,29 @@
             <div class="row m-5">
             <!-- Product images -->
                 <div class="col-12 col-md-3">
-                    <x-carousel/>
+                    <x-carousel>
+                      <x-slot name="imgCarousel">
+
+                        @foreach ($announcement->images as $key=>$image)
+                        @if ($key == 0){
+                          <div class="carousel-item active">
+                             
+                                 <img src="{{ $image->getUrl(300, 150)}}" class="w-100 d-block" alt="">
+                             </div>
+
+                        }
+                        @else
+                        <div class="carousel-item">
+                             
+                          <img src="{{ $image->getUrl(300, 150)}}" class="w-100 d-block" alt="">
+                      </div>
+                            
+                        @endif
+ 
+      @endforeach
+                      </x-slot>
+                      
+                    </x-carousel>
                 </div>
             
             <!-- Product details -->
@@ -43,14 +65,7 @@
                     </div>
                 </div>
 
-                {{-- <div class="mini-imgs my-5 img-fluid">
-                  <img src="https://picsum.photos/100/125" alt="">
-                  <img src="https://picsum.photos/101/125" alt="">
-                  <img src="https://picsum.photos/102/125" alt="">
-                  <img src="https://picsum.photos/103/125" alt="">
-                  <img src="https://picsum.photos/104/125" alt="">
-                </div>
-                --}}
+             
                 <div class="col-12 my-5">
                   <h2>{{__('ui.description')}}:</h2>
                   <p class="s-product-description">

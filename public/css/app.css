@@ -15889,8 +15889,8 @@ readers do not read off random characters that represent icons */
 
 * {
     font-family: 'Roboto', sans-serif;
-    margin: 0;
-    padding: 0;
+    /* margin: 0;
+    padding: 0; */
 }
 
 body{
@@ -15950,7 +15950,7 @@ a {
    margin: 0;
    min-width: 15rem;
    min-height: 2.5rem;
-   border: none;
+   border: solid 2px var(--accentColor);
    outline: none;
 }
 
