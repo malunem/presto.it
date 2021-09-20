@@ -35,5 +35,6 @@ return [
   'welcome' => 'Bienvenido a Presto.it!',
   'carousel' => 'sus compras a un clic de distancia, rápido y confiable',
   'city' => 'región o ciudad',
+  'undo'=>'cancelar'
   
 ];

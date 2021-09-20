@@ -7,7 +7,7 @@ return [
   'logout' => 'logout',
   'button' => 'go to product',
   'images' => 'images',
-  'acept' => 'acept',
+  'acept' => 'accept',
   'refuses' => 'refuses',
   'email' => 'email',
   'password' => 'password',
@@ -32,6 +32,7 @@ return [
   'workWithUs' => 'Do you want to become an auditor? Contact us',
   'welcome' => 'Welcome to Presto.it!',
   'carousel' => 'your purchases just a click away, fast responsive and reliable',
+  'undo'=>'undo',
 
   
 ];
