@@ -32,6 +32,7 @@ return [
   'workWithUs' => ' Sie möchten Wirtschaftsprüfer werden? Kontaktiere uns',
   'welcome' => 'Willkommen auf Presto.it!',
   'carousel' => 'Ihre Einkäufe nur einen Klick entfernt, schnell reagierend und zuverlässig',
+  'undo'=>'zurück',
 
   
 ];

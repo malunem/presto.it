@@ -28,14 +28,14 @@
                 
                   <div class="form-floating mb-3">
                       <label for="title"></label>
-                    <input class="form-control" id="title" type="text" placeholder="titolo" data-sb-validations="required" name="title" value="{{old('title')}}"/>
+                    <input class="form-custom" id="title" type="text" placeholder="titolo" data-sb-validations="required" name="title" value="{{old('title')}}"/>
                     <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
                   </div>
       
                   <!-- Email Input -->
                   <div class="form-floating mb-3">
                       <label for="description"></label>
-                      <textarea class="form-control" placeholder="description" id="description" type="text" placeholder="Inserisci la tua descrizione" style="height: 10rem;" data-sb-validations="required" name="description">{{old('message')}}</textarea>
+                      <textarea class="form-custom" placeholder="description" id="description" type="text" placeholder="Inserisci la tua descrizione" style="height: 10rem;" data-sb-validations="required" name="description">{{old('message')}}</textarea>
                     <div class="invalid-feedback" data-sb-feedback="description:required">text is required.</div>
                   </div>
       

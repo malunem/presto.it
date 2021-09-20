@@ -7,16 +7,16 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\App;
 
 class SetLocaleMiddleware
-// {
-//     /**
-//      * Handle an incoming request.
-//      *
-//      * @param  \Illuminate\Http\Request  $request
-//      * @param  \Closure  $next
-//      * @return mixed
-//      */
-//     public function handle(Request $request, Closure $next)
-//     {
+{
+    /**
+     * Handle an incoming request.
+     *
+     * @param  \Illuminate\Http\Request  $request
+     * @param  \Closure  $next
+     * @return mixed
+     */
+    public function handle(Request $request, Closure $next)
+    {
 
 
 
@@ -30,16 +30,16 @@ class SetLocaleMiddleware
         //     }
         
         
-        //     // $locale = session('locale', 'it');
-        //     App::setLocale($locale);
+            $locale = session('locale', 'it');
+            App::setLocale($locale);
         
-        //     // return $next($request);
-        // }
-        
-        
+            return $next($request);
+        }
         
         
-        {
+        
+        
+        // {
             /**
              * Handle an incoming request.
              *
@@ -47,16 +47,16 @@ class SetLocaleMiddleware
              * @param  \Closure  $next
              * @return mixed
              */
-            public function handle(Request $request, Closure $next)
-            { 
+            // public function handle(Request $request, Closure $next)
+            // { 
                 // $locale = App::currentLocale();
                 // $locale = session('locale', 'it');
                 // dd(App::Locale());
         
-        if (session()->has('locale')) {
-            App::setLocale(session()->get('locale'));
-        }
+    //     if (session()->has('locale')) {
+    //         App::setLocale(session()->get('locale'));
+    //     }
 
-        return $next($request);
-    }
+    //     return $next($request);
+    // }
 }
