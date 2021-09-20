@@ -64,7 +64,30 @@
                 @foreach ($announcements as $announcement)
                 <div class="col-12 col-md-4 ">
                     <div class="card shadow my-3" style="width: 22rem;">
-                        <img class="img-fluid" src="https://picsum.photos/300" class="card-img-top" alt="{{$announcement->title}}">
+                      <x-carousel>
+                        <x-slot name="imgCarousel">
+  
+                          @foreach ($announcement->images as $key=>$image)
+                          @if ($key == 0){
+                            <div class="carousel-item active">
+                               
+                                   <img src="{{ $image->getUrl(400, 300)}}" class="w-100 d-block" alt="{{$announcement->title}}">
+                               </div>
+  
+                          }
+                          @else
+                          <div class="carousel-item">
+                               
+                            <img src="{{ $image->getUrl(400, 300)}}" class="w-100 d-block" alt="{{$announcement->title}}">
+                        </div>
+                              
+                          @endif
+   
+        @endforeach
+                        </x-slot>
+                        
+                      </x-carousel>
+                        
                         <div class="card-body">
                           <h5 class="h5">{{$announcement->title}} </h5>
                           <p class="small">{{Str::limit($announcement->description, 50)}}</p>

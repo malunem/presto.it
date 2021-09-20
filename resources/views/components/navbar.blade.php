@@ -8,6 +8,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ms-auto">
 
+
           <li class="nav-item">
             @include('layouts._locale', ['lang'=> 'it', 'nation' => 'it'])
           </li>

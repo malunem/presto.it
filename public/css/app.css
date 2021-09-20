@@ -16042,7 +16042,7 @@ a {
   } */
 
 .carousel{
-    min-height: 40vh;
+    /* min-height: 40vh; */
 }
 
 .custom-carousel{
