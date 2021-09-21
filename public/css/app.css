@@ -16051,9 +16051,7 @@ readers do not read off random characters that represent icons */
     display: none;
     background-color: var(--orangeColor);
     color:var(--navColor);
-    width: 3rem;
-
-    
+    width: 3rem; 
   }
 :root{
     --backgroundColor: #F5F6FA;
