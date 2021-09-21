@@ -10,6 +10,7 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
 use Illuminate\Support\Facades\Storage;
 use App\Http\Requests\AnnouncementRequest;
+use App\Jobs\GoogleVisionSafeSearchImage;
 use App\Jobs\ResizeImage;
 
 class AnnouncementController extends Controller
@@ -62,11 +63,12 @@ class AnnouncementController extends Controller
                 400,
                 300
             ));
-
-
+            
+            
             $i->file = $newFileName;
             $i->announcement_id = $announcement->id;
             $i->save();
+            dispatch(new GoogleVisionSafeSearchImage($i->id));
         }
         File::deleteDirectory(storage_path("/app/public/temp/{$uniqueSecret}"));
    

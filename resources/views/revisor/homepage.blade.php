@@ -60,13 +60,22 @@
               <h3>{{__('ui.images')}}</h3> 
             </div>
           </div>
-          <div class="row mt-4 h-50 align-items-md-start align-items-end">
+          <div class="row mt-4 h-50 align-items-md-start align-items-end bg-danger">
             @foreach ($announcement->images as $image)
-            <div class=" col-12 col-md-3">
+            <div class="col-12 col-md-6">
               <div class="mini-imgs">
                 <img src="{{ $image->getUrl(300, 150)}}" class="mini-imgs mt-3" alt="">
               </div>
-            </div>
+              </div>
+              <div class="col-12 col-md-6 mt-5">
+                <ul>
+                  <li>Adult: {{$image->adult}}</li>
+                  <li>Spoof: {{$image->spoof}}</li>
+                  <li>Medical: {{$image->medical}}</li>
+                  <li>Violence: {{$image->violence}}</li>
+                  <li>Racy: {{$image->racy}}</li>
+                </ul>
+              </div>
             @endforeach
           </div>
           
