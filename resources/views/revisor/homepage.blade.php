@@ -130,7 +130,7 @@
           <div class="col-12">
             
             <table class="table">
-              <thead class="thead-light">
+              <thead class="thead-light text-white table-custom">
                 <tr>
                   <th scope="col">ID annuncio #</th>
                   <th scope="col">Titolo annuncio</th>

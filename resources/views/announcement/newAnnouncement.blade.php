@@ -28,20 +28,20 @@
                 
                   <div class="form-floating mb-3">
                       <label for="title"></label>
-                    <input class="form-custom" id="title" type="text" placeholder="titolo" data-sb-validations="required" name="title" value="{{old('title')}}"/>
+                    <input class="form-custom" id="title" type="text" placeholder="{{__('ui.title')}}" data-sb-validations="required" name="title" value="{{old('title')}}"/>
                     <div class="invalid-feedback" data-sb-feedback="name:required">Name is required.</div>
                   </div>
       
                   <!-- Email Input -->
                   <div class="form-floating mb-3">
                       <label for="description"></label>
-                      <textarea class="form-custom" placeholder="description" id="description" type="text" placeholder="Inserisci la tua descrizione" style="height: 10rem;" data-sb-validations="required" name="description">{{old('message')}}</textarea>
+                      <textarea class="form-custom" placeholder="{{__('ui.description')}}" id="description" type="text" placeholder="Inserisci la tua descrizione" style="height: 10rem;" data-sb-validations="required" name="description">{{old('message')}}</textarea>
                     <div class="invalid-feedback" data-sb-feedback="description:required">text is required.</div>
                   </div>
       
                   <!-- Message Input -->
                   <div class="form-floating mb-3">
-                      <input type="text" id="price" name="price" placeholder="Prezzo"/>
+                      <input type="text" id="price" name="price" placeholder="{{__('ui.price')}}"/>
             
                     <div class="invalid-feedback" data-sb-feedback="price:required">price is required.</div>
 

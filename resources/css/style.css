@@ -76,6 +76,11 @@ a {
    outline: none;
 }
 
+    .table-custom {
+        border: solid 2px var(--accentColor);
+        background-color: var(--navColor);
+    }
+
 @media screen and (max-width: 700px){
     .mini-imgs{
         margin-top: 20px;

@@ -7,6 +7,8 @@ return [
   'logout' => 'logout',
   'button' => 'go to product',
   'images' => 'images',
+  'title' => 'Title',
+  'price' => 'price',
   'acept' => 'accept',
   'refuses' => 'refuses',
   'email' => 'email',
