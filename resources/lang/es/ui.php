@@ -7,6 +7,8 @@ return [
   'logout'=> 'cerrar sesión',
   'button'=> 'ir al producto',
   'images'=> 'Imagenes',
+  'title' => 'título',
+  'price' => 'precio',
   'acept' => 'aceptar',
   'refuses' => 'se nega',
   'email' => 'email',
