@@ -19,6 +19,8 @@
         {{-- segnaposto generico --}}
         {{$slot}}
 
+        <x-buttonUp/>
+
         <x-footer/>
         <script src="{{asset('js/app.js')}}"></script>
     </body>
