@@ -75,6 +75,14 @@
                   <li>Violence: {{$image->violence}}</li>
                   <li>Racy: {{$image->racy}}</li>
                 </ul>
+                <ul>
+                  <b>Labels</b><br>
+                  @if ($image->labels)
+                  @foreach ($image->labels as $label)
+                  <li>{{$label}}</li>
+                  @endforeach
+                  @endif
+                </ul>
               </div>
             @endforeach
           </div>

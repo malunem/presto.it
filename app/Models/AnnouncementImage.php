@@ -10,6 +10,11 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 class AnnouncementImage extends Model
 {
     use HasFactory;
+
+    protected $casts = [
+        'labels' => 'array',
+    ];
+
     public function announcement()
     {
         return $this->belongsTo(Announcement::class);
