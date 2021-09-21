@@ -89,6 +89,7 @@
                       </x-carousel>
                         
                         <div class="card-body">
+                          
                           <h5 class="h5">{{$announcement->title}} </h5>
                           <p class="small">{{Str::limit($announcement->description, 50)}}</p>
                           <p class="lead">{{$announcement->user->name}}</p>
