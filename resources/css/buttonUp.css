@@ -5,7 +5,5 @@
     display: none;
     background-color: var(--orangeColor);
     color:var(--navColor);
-    width: 3rem;
-
-    
+    width: 3rem; 
   }
