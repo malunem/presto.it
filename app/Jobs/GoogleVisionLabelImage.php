@@ -14,7 +14,9 @@ use Illuminate\Queue\SerializesModels;
 class GoogleVisionLabelImage implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
+
     private $announcement_image_id;
+
     public function __construct($announcement_image_id)
     {
         $this->announcement_image_id = $announcement_image_id;
@@ -23,10 +25,12 @@ class GoogleVisionLabelImage implements ShouldQueue
     public function handle()
     {
         $i = AnnouncementImage::find($this->announcement_image_id);
+
         if (!$i) {
             return;
         }
-        $image = file_get_contents(storage_path('app/' . $i->file));
+        
+        $image = file_get_contents(storage_path('/app/' . $i->file));
         
         putenv('GOOGLE_APPLICATION_CREDENTIALS=' . base_path('google_credential.json'));
         
