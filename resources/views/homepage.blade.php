@@ -59,6 +59,20 @@
             </form>
             </div>
           </div>
+
+          <div class="row w-100 p-5">
+            <div class="col-12 text-center text-wrap mt-3 fs-4 fw-bold fst-italic text-dark text-homepage-custom">
+
+              <p>Devi fare spazio in casa? O cerchi di fare un affare nel mercato dell'usato?</p>
+              <p>Presto è la piattaforma di annunci che combina un vasto assortimento di articoli a un ottimo servizio di supporto.</p> 
+              <p>È il punto di riferimento per gli annunci in Italia, crea presto un account!</p>   
+              {{-- <p>Non solo! Cerchi subito un lavoro o una nuova casa? Le inserzioni pubblicate includono offerte di impiego, case in affitto o in vendita e tanto altro.
+                  Cosa aspetti? Comincia subito a comprare online su presto.it! </p>    --}}
+                  
+
+           </div>
+          </div>
+
           <div class="row">
             <h1 class=" my-4 py-5 text-center">{{ __('ui.latestListing')}}</h1>
                 @foreach ($announcements as $announcement)

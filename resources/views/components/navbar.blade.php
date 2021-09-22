@@ -42,9 +42,11 @@
           <li class="nav-item">
             <a class="nav-link text-capitalize" aria-current="page" href="{{route('newAnnouncement')}}">{{__('ui.newListingnav')}}</a>
           </li>
+          @if (!Auth::user()->is_revisor)
           <li class="nav-item">
             <a class="nav-link" aria-current="page" href="{{route('revisor.request')}}">{{__('ui.workWithUs')}}</a>
           </li>
+          @endif
           {{--Revisor home --}}
           
           @if (Auth::user()->is_revisor)

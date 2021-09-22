@@ -106,7 +106,7 @@
 
             {{-- INIZIO TEST --}}
             @foreach ($announcement->images as $image)
-            <div class="card mb-5 shadow" style="max-width: 1000px;">
+            <div class="card mb-5 shadow " style="max-width: 1000px;">
               <div class="row g-0">
                 <div class="col-md-5 d-flex justify-content-center">
                   <img src="{{$image->getUrl(300, 150)}}" class="img-card img-fluid rounded-start" alt="...">
