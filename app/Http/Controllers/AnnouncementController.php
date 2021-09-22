@@ -3,17 +3,18 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use App\Jobs\ResizeImage;
 use App\Models\Announcement;
 use Illuminate\Http\Request;
 use App\Models\AnnouncementImage;
+use App\Jobs\GoogleVisionLabelImage;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\File;
-use Illuminate\Support\Facades\Storage;
-use App\Http\Requests\AnnouncementRequest;
-use App\Jobs\GoogleVisionLabelImage;
 use App\Jobs\GoogleVisionRemoveFaces;
+use Illuminate\Support\Facades\Storage;
 use App\Jobs\GoogleVisionSafeSearchImage;
-use App\Jobs\ResizeImage;
+use App\Http\Requests\AnnouncementRequest;
+use Spatie\Image\Image;
 
 class AnnouncementController extends Controller
 {
@@ -69,7 +70,13 @@ class AnnouncementController extends Controller
             
             $i->file = $newFileName;
             $i->announcement_id = $announcement->id;
+           // $i->watermark('/app/public/img/sfondopresto4.png');
+            // $i->watermark(storage_path("/app/public/temp/{$uniqueSecret}"));
             $i->save();
+          // Image::load(storage_path("/app/public/temp/{$uniqueSecret}"))
+           
+            //->save();
+           
 
            
            

@@ -14,7 +14,7 @@
         "laravel/sanctum": "^2.11",
         "laravel/scout": "^9.2",
         "laravel/tinker": "^2.5",
-        "spatie/image": "1.10.5",
+        "spatie/image": "1.10",
         "teamtnt/laravel-scout-tntsearch-driver": "^11.5"
     },
     "require-dev": {
