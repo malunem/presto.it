@@ -3220,6 +3220,8 @@ __webpack_require__(/*! ./announcementImages */ "./resources/js/announcementImag
 
 __webpack_require__(/*! ./button */ "./resources/js/button.js");
 
+__webpack_require__(/*! ./detail */ "./resources/js/detail.js");
+
 /***/ }),
 
 /***/ "./resources/js/button.js":
@@ -3250,6 +3252,21 @@ function backToTop() {
   document.body.scrollTop = 0;
   document.documentElement.scrollTop = 0;
 }
+
+/***/ }),
+
+/***/ "./resources/js/detail.js":
+/*!********************************!*\
+  !*** ./resources/js/detail.js ***!
+  \********************************/
+/***/ (() => {
+
+$(document).ready(function () {
+  // MDB Lightbox Init
+  $(function () {
+    $("#mdb-lightbox-ui").load("mdb-addons/mdb-lightbox-ui.html");
+  });
+});
 
 /***/ }),
 

@@ -133,3 +133,23 @@ transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
     width: 100%;
     background-color: red !important;
 }
+
+.img-card{
+    width: 100% !important;
+    height: 20vw !important;
+    object-fit: contain !important;
+}
+
+.btn-revisor{
+    width: 5rem;
+    display: inline-block;
+    text-decoration: none;
+    padding: 7px 7px;
+    text-transform: capitalize;
+    border-radius: 0.25rem;
+}
+
+.header-revisor{
+    box-shadow: 5px 10px 10px 0px rgba(38, 38, 38, 0.15);
+    /* box-shadow: 0 0.5rem 1rem rgb(0 0 0 / 15%) !important; */
+}
