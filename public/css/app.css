@@ -15960,7 +15960,7 @@ readers do not read off random characters that represent icons */
 .custom-carousel{
     /* min-height: 50px!important; */
     z-index: -10;
-    min-width: 100vw;
+    max-width: 100%;
     min-height: 40vh;
 }
 .img-carousel-1{
@@ -16068,6 +16068,7 @@ readers do not read off random characters that represent icons */
     font-family: 'Roboto', sans-serif;
     /* margin: 0;
     padding: 0; */
+    box-sizing: border-box;
 }
 
 body{

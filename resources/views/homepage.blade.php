@@ -46,7 +46,7 @@
           </header>
         </div>
       </div>
-    </div>
+    {{-- </div> --}}
     
     {{-- <div class="wrapper"> --}}
         <div class="container">
@@ -63,7 +63,7 @@
             <h1 class=" my-4 py-5 text-center">{{ __('ui.latestListing')}}</h1>
                 @foreach ($announcements as $announcement)
                 <div class="col-12 col-md-4 ">
-                    <div class="card shadow my-3" style="width: 22rem;">
+                    <div class="card shadow my-3" style="width: 21rem;">
                       <x-carousel>
                         <x-slot name="imgCarousel">
   
@@ -103,5 +103,5 @@
                 @endforeach
             </div>
         </div>
-    {{-- </div> --}}
+    </div>
 </x-layout>

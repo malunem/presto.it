@@ -5,7 +5,7 @@
 .custom-carousel{
     /* min-height: 50px!important; */
     z-index: -10;
-    min-width: 100vw;
+    max-width: 100%;
     min-height: 40vh;
 }
 .img-carousel-1{

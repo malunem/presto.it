@@ -1,10 +1,9 @@
 <x-layout>
+  <div class="container ">
   <main class="custom-body-height">
     @if ($announcement)
     <h2 class="text-center mt-5">{{__('ui.review')}}</h2>
     
-    <div class="container-fluid ">
-      
       
       {{-- <div class="row m-5 bg-primary"> --}}
         <!-- Product images -->
@@ -317,4 +316,5 @@
           </div>
         </div>
       </main>    
+    </div>
     </x-layout>

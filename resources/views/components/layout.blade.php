@@ -17,10 +17,10 @@
         <x-navbar/>
 
         {{-- segnaposto generico --}}
-        <div class="container">
+        {{-- <div class="container"> --}}
 
             {{$slot}}
-        </div>
+        {{-- </div> --}}
 
         <x-buttonUp/>
 
