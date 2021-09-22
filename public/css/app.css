@@ -16163,7 +16163,31 @@ transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 
       
 }
-  
+
+.very_unlikely{
+    width: 10%;
+    background-color: green !important;
+}
+
+.unlikely{
+    width: 25%;
+    background-color: greenyellow !important;
+}
+
+.possible{
+    width: 50%;
+    background-color: yellow !important; 
+}
+
+.likely{
+    width: 75%;
+    background-color: orangered !important;
+}
+
+.very_likely{
+    width: 100%;
+    background-color: red !important;
+}
 .dropzone, .dropzone * {
   box-sizing: border-box;
 }

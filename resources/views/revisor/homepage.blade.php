@@ -6,9 +6,9 @@
     <div class="container-fluid ">
       
       
-      <div class="row m-5">
+      {{-- <div class="row m-5 bg-primary"> --}}
         <!-- Product images -->
-        <div class="col-12 col-md-3">
+       {{--  <div class="col-12 col-md-3 ">
           <x-carousel>
             <x-slot name="imgCarousel">
               
@@ -31,58 +31,94 @@
             </x-slot>
             
           </x-carousel>
-        </div>
+        </div> --}}
         
         
         <!-- Product details -->
         
         
-        <div class="col-12 col-md-9 mt-5">
-          <div class="row ">
-            <h2 class="s-product-name text-capitalize">
-              {{$announcement->title}}
-            </h2>
-            
-            <p class="mx-3 p-0 lead strong display-7 ">
-              {{$announcement->user->name}}
-            </p>
-            <p class="mx-3 p-0 lead strong display-7">
-              {{$announcement->created_at->format('d/m/Y')}}
-            </p>
-            <span class="lead strong display-6">{{$announcement->price}} €</span>
-            
-            <p class="s-product-price lead fw-bold my-3">
-              <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>
-            </p>
-            
-            
-            <div class="mt-2">
-              <h3>{{__('ui.images')}}</h3> 
+        {{-- <div class="col-12 col-md-9 mt-5 "> --}}
+          <div class="row align-items-center d-flex flex-column">
+
+            <div class="col-12 ">
+              <h3 class="s-product-name text-capitalize text-center">
+                Titolo annuncio:
+                {{$announcement->title}}
+              </h3>
+              
+              <div class="d-flex justify-content-center">
+                <p class="mx-3 p-0 lead strong display-7 ">
+                  Nome utente:
+                  {{$announcement->user->name}}
+                </p>
+                <p class="mx-3 p-0 lead strong display-7">
+                  {{$announcement->created_at->format('d/m/Y')}}
+                </p>
+                <span class="lead strong fs-5">{{$announcement->price}} €</span>
+                
+                <p class="s-product-price lead fw-bold">
+                  <a href="{{route('show.Category', $announcement->category_id)}}">{{$announcement->category->category}}</a>
+                </p>
+              </div>
             </div>
           </div>
-          <div class="row mt-4 h-50 align-items-md-start align-items-end bg-danger">
+
+          <div class="row mt-4 h-50 align-items-md-start justify-content-center">
+            <div class="text-center">
+              <h3>{{__('ui.images')}}</h3> 
+            </div>
             @foreach ($announcement->images as $image)
-            <div class="col-12 col-md-6">
-              <div class="mini-imgs">
-                <img src="{{ $image->getUrl(300, 150)}}" class="mini-imgs mt-3" alt="">
+            <div class="col-12 col-md-4 justify-content-center d-flex">
+              <div>
+                <img src="{{ $image->getUrl(300, 150)}}"  alt="">
               </div>
               </div>
-              <div class="col-12 col-md-6 mt-5">
-                <ul>
-                  <li>Adult: {{$image->adult}}</li>
-                  <li>Spoof: {{$image->spoof}}</li>
-                  <li>Medical: {{$image->medical}}</li>
-                  <li>Violence: {{$image->violence}}</li>
-                  <li>Racy: {{$image->racy}}</li>
+              <div class="col-12 col-md-5 ">
+                <ul class="list-unstyled">
+                  <li>Adult:</li>
+                  <div class="progress">
+                    <div class="progress-bar {{$image->adult}}" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <li>Spoof:</li>
+                  <div class="progress">
+                    <div class="progress-bar {{$image->spoof}}" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <li>Medical:</li>
+                  <div class="progress">
+                    <div class="progress-bar {{$image->medical}}" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  <li>Violence:</li>
+                  <div class="progress">
+                    <div class="progress-bar {{$image->violence}}" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
+                  {{-- <div class="progress">
+                    <div class="progress-bar" role="progressbar" style="width: {{$image->violence}}%; background-color: green" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"></div>
+                </div> --}}
+                  <li>Racy:</li>
+                  <div class="progress">
+                    <div class="progress-bar {{$image->racy}}" role="progressbar" aria-valuemin="0" aria-valuemax="100"></div>
+                  </div>
                 </ul>
-                <ul>
+                {{-- <ul>
                   <b>Labels</b><br>
                   @if ($image->labels)
                   @foreach ($image->labels as $label)
                   <li>{{$label}}</li>
                   @endforeach
                   @endif
-                </ul>
+                </ul> --}}
+                <b>Labels</b><br>
+                    @if ($image->labels)
+                    <p>
+                    @foreach ($image->labels as $key=>$label)
+                      @if ($key == 0)
+                          <span>{{$label}}</span>
+                      @else
+                          <span>; {{$label}}</span>
+                      @endif
+                    @endforeach
+                    </p>
+                    @endif
               </div>
             @endforeach
           </div>
@@ -90,7 +126,7 @@
           
           
           
-        </div>
+        {{-- </div> --}}
         
         {{-- <div class="mini-imgs my-5 img-fluid">
           <img src="https://picsum.photos/100/125" alt="">
@@ -100,8 +136,8 @@
           <img src="https://picsum.photos/104/125" alt="">
         </div>
         --}}
-      </div>   
-      <div class="row m-0 justify-content-around ">
+      {{-- </div> --}}   
+      <div class="row m-0 justify-content-around bg-danger">
         <div class="col-12 col-md-4 mt-5">
           <h2 class="text-capitalize">{{__('ui.description')}}:</h2>
           <p class="s-product-description">
@@ -143,9 +179,9 @@
           <img src="{{asset('img/done-icon.png')}}" alt="" width="200px" height="200px" class="mt-5 mb-5">
         </div>
         @endif
-        <div class="row">
-          <div class="col-12">
-            
+        <div class="row justify-content-center mt-5">
+          <div class="col-12 col-md-8">
+            <h2 class="text-center mb-2">Ultime modifiche</h2>
             <table class="table">
               <thead class="thead-light text-white table-custom">
                 <tr>
@@ -159,7 +195,7 @@
               <tbody>
                 @foreach($announcements as $announcement)
                 <tr>
-                  <th scope="row">{{$announcement->id}}</th>
+                  <td scope="row">{{$announcement->id}}</th>
                   <td>{{$announcement->title}}</td>
                   <td>{{$announcement->user->name}}</td>
                   <td>
@@ -169,10 +205,10 @@
                     rifiutato
                     @endif
                   </td>
-                    <td>            
-                      <form action="{{route('revisor.undo', $announcement->id)}}" method="POST" class="d-inline">
+                    <td class="d-flex justify-content-end">            
+                      <form action="{{route('revisor.undo', $announcement->id)}}" method="POST" class="d-inline ms-auto">
                         @csrf
-                        <button type="submit" class="btn btn-warning mb-5 ms-5">
+                        <button type="submit" class="btn btn-warning">
                           {{__('ui.undo')}}
                         </button>
                       </form>

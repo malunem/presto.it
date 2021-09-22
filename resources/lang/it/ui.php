@@ -6,7 +6,7 @@ return [
   'register'=> 'registrati',
   'logout'=> 'logout',
   'button'=> 'vai al prodotto',
-  'images'=> 'immagini',
+  'images'=> 'Immagini',
   'title' => 'títolo',
   'price' => 'prezzo',
   'acept' => 'accetta',
