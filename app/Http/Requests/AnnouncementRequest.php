@@ -25,8 +25,8 @@ class AnnouncementRequest extends FormRequest
     {
         return [
             'price' => 'required|numeric',
-            'title' => 'required|max:20',
-            'description'=> 'required|max:500',
+            'title' => 'required|max:50',
+            'description'=> 'required|max:1000',
             'category_id'=> 'required',
         ];
     }
