@@ -35,6 +35,8 @@ return [
   'welcome' => 'Welcome to Presto.it!',
   'carousel' => 'your purchases just a click away, fast responsive and reliable',
   'undo'=>'undo',
-
+  'header'=>'Do you need to make room in the house? Or are you looking to make a bargain in the second-hand market?
+  Presto is the classifieds platform that combines a large assortment of items with great support service.
+  It is the reference point for ads in Italy, create an account soon!'
   
 ];

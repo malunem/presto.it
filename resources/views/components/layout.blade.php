@@ -8,8 +8,9 @@
         <!-- link per tutto il CSS -->
         <link rel="stylesheet" href="{{asset('css/app.css')}}">
           <!-- Add the slick-theme.css if you want default styling -->
+          <link rel="shortcut icon" href="/img/logo-presto.png" type="image/x-icon"/>
         <title>
-            {{$title ?? ''}}
+            {{$title ?? 'Presto.it'}}
         </title>
 
     </head>
@@ -17,7 +18,6 @@
         <x-navbar/>
 
         {{-- segnaposto generico --}}
-        
 
             {{$slot}}
         

@@ -1,5 +1,5 @@
 <x-layout>
-
+  <x-slot name="title">New Annoucement</x-slot>
     <div class="container px-5 my-5">
         <div class="row justify-content-center">
           <div class="col-lg-8">

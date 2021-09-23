@@ -1,5 +1,5 @@
 <x-layout>
-    <x-slot name='title'>
+    <x-slot name='title' class="text-capitalize">
       {{__('ui.register')}}
     </x-slot>
     <div class="container-fluid m-0 p-0 custom-body-height">

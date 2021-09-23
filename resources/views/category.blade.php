@@ -1,4 +1,5 @@
 <x-layout>
+    <x-slot name="title">Category</x-slot>
     <div class="container">
         <div class="row">
             <h1 class="text-center my-5">{{$category_name}}</h1> 

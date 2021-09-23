@@ -35,6 +35,9 @@ return [
   'welcome' => 'Willkommen auf Presto.it!',
   'carousel' => 'Ihre Einkäufe nur einen Klick entfernt, schnell reagierend und zuverlässig',
   'undo'=>'zurück',
-
+  'header'=>'
+   Müssen Sie Platz im Haus schaffen? Oder suchen Sie ein Schnäppchen auf dem Gebrauchtmarkt?
+   Presto ist die Kleinanzeigenplattform, die eine große Auswahl an Artikeln mit einem großartigen Support-Service kombiniert.
+   Es ist der Bezugspunkt für Anzeigen in Italien, erstellen Sie bald ein Konto!'
   
 ];

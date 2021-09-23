@@ -37,6 +37,8 @@ return [
   'welcome' => 'Bienvenido a Presto.it!',
   'carousel' => 'sus compras a un clic de distancia, rápido y confiable',
   'city' => 'región o ciudad',
-  'undo'=>'cancelar'
-  
+  'undo'=>'cancelar',
+  'header'=>'¿Necesitas hacer espacio en la casa? ¿O está buscando hacer una ganga en el mercado de segunda mano?
+  Presto es la plataforma de clasificados que combina una gran variedad de artículos con un excelente servicio de soporte.
+  Es el punto de referencia para los anuncios en Italia, cree una cuenta pronto.'
 ];

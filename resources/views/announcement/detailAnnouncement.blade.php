@@ -1,5 +1,5 @@
 <x-layout>
-
+  <x-slot name="title">Detail  Annoucement</x-slot>
   <div class="container mt-md-4 py-md-2 bg-white ">
           <main class="custom-body-height ">
 

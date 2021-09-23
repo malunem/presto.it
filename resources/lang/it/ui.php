@@ -38,5 +38,7 @@ return [
   'carousel' => 'i tuoi acquisti a portata di click,veloce reattivo e affidabile',
   'city' => 'Regione o città',
   'undo'=>'annulla',
-  
+  'header'=>"Devi fare spazio in casa? O cerchi di fare un affare nel mercato dell'usato?
+   Presto è la piattaforma di annunci che combina un vasto assortimento di articoli a un ottimo servizio di supporto.
+   È il punto di riferimento per gli annunci in Italia, crea presto un account!"
 ];

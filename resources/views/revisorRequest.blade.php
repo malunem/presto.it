@@ -1,17 +1,17 @@
 <x-layout>
-
+    <x-slot name="title">Revisor</x-slot>
     <div class="container mt-5 custom-body-height">
         @if ($errors->any())
-                 <div class="alert alert-danger">
-                       <ul>
-                           @foreach ($errors->all() as $error)
-                               <li>{{$error}}</li>
-                           @endforeach
-                       </ul>
-                 </div>
-              @endif
-  
-      <div class="row justify-content-center MtClass MbClass wide-50">
+        <div class="alert alert-danger">
+            <ul>
+                @foreach ($errors->all() as $error)
+                <li>{{$error}}</li>
+                @endforeach
+            </ul>
+        </div>
+        @endif
+        
+        <div class="row justify-content-center MtClass MbClass wide-50">
           <div class="col-12 col-md-6 ">
               <form method="POST" action="{{route('revisorSubmit')}}">
                   @csrf
